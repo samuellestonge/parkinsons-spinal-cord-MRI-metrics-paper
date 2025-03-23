@@ -1,5 +1,4 @@
 participant_id,age,age_group,sex,group,handedness,affectedside,affectedside_nb,affectedlimb,firstsymptoms,PD_duration,UPDRSIII_total,UPDRSIII_group,UPDRSIII_Upper,UPDRSIII_Lower,DWI,MTR,T2star
-sub-P002,68,65-69,M,PD,RH,Right,2,Lower,2013,5,19,low,7,2,Y,Y,Y
 sub-P003,70,70-74,M,PD,RH,Left,1,Upper,2018,1,37,adv,14,7,Y,Y,Y
 sub-P005,74,70-74,M,PD,LH,Right,2,Upper,2011,8,25,med,6,8,Y,N,N
 sub-P006,56,55-59,F,PD,RH,Left,1,Lower,2016,3,16,low,6,3,Y,N,N
