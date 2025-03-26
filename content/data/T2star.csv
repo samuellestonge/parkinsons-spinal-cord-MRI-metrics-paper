@@ -5111,3 +5111,217 @@ SCT Version,MRI_metric,VertLevel,Label,WA,Subject,UPDRS_class_bis,CTRL_or_PD,UPD
 6.1,T2star,5,WM left fasciculus gracilis,233.5425445,sub-P113,CTRL,CTRL,n/a,73
 6.1,T2star,5,WM right fasciculus cuneatus,245.3538372,sub-P113,CTRL,CTRL,n/a,73
 6.1,T2star,5,WM right fasciculus gracilis,241.7378481,sub-P113,CTRL,CTRL,n/a,73
+6.1,T2star,2:05,white matter,353.1686043,sub-P003,adv,PD,37,70
+6.1,T2star,2:05,white matter,276.6352834,sub-P009,adv,PD,59,69
+6.1,T2star,2:05,white matter,290.390003,sub-P011,med,PD,22,64
+6.1,T2star,2:05,white matter,278.232739,sub-P013,med,PD,29,65
+6.1,T2star,2:05,white matter,319.644501,sub-P014,med,PD,27,66
+6.1,T2star,2:05,white matter,310.1244311,sub-P017,low,PD,7,70
+6.1,T2star,2:05,white matter,322.5901662,sub-P018,med,PD,22,74
+6.1,T2star,2:05,white matter,266.2789773,sub-P019,adv,PD,42,62
+6.1,T2star,2:05,white matter,242.4481514,sub-P020,med,PD,23,66
+6.1,T2star,2:05,white matter,285.3310649,sub-P022,adv,PD,41,48
+6.1,T2star,2:05,white matter,287.2628258,sub-P023,low,PD,17,62
+6.1,T2star,2:05,white matter,353.195928,sub-P024,low,PD,12,82
+6.1,T2star,2:05,white matter,281.9847081,sub-P027,low,PD,21,65
+6.1,T2star,2:05,white matter,268.9090098,sub-P029,low,PD,13,57
+6.1,T2star,2:05,white matter,277.2133526,sub-P030,CTRL,CTRL,,38
+6.1,T2star,2:05,white matter,318.1281138,sub-P032,adv,PD,43,66
+6.1,T2star,2:05,white matter,293.8311969,sub-P033,CTRL,CTRL,,62
+6.1,T2star,2:05,white matter,279.0794258,sub-P035,med,PD,23,68
+6.1,T2star,2:05,white matter,345.711511,sub-P037,adv,PD,47,82
+6.1,T2star,2:05,white matter,310.4428201,sub-P038,low,PD,20,79
+6.1,T2star,2:05,white matter,346.8132002,sub-P039,adv,PD,41,68
+6.1,T2star,2:05,white matter,287.0224502,sub-P040,med,PD,26,72
+6.1,T2star,2:05,white matter,261.0282889,sub-P041,med,PD,24,64
+6.1,T2star,2:05,white matter,245.3989929,sub-P042,med,PD,24,56
+6.1,T2star,2:05,white matter,318.9426871,sub-P043,, ,,
+6.1,T2star,2:05,white matter,371.596995,sub-P045,adv,PD,34,72
+6.1,T2star,2:05,white matter,303.0313653,sub-P046,, ,,
+6.1,T2star,2:05,white matter,232.8331471,sub-P047,, ,,
+6.1,T2star,2:05,white matter,288.6447625,sub-P048,adv,PD,34,64
+6.1,T2star,2:05,white matter,251.850946,sub-P049,CTRL,CTRL,,83
+6.1,T2star,2:05,white matter,281.7513997,sub-P050,CTRL,CTRL,,57
+6.1,T2star,2:05,white matter,271.8310176,sub-P052,med,PD,27,48
+6.1,T2star,2:05,white matter,292.0745169,sub-P053,low,PD,20,66
+6.1,T2star,2:05,white matter,334.6582145,sub-P055,med,PD,30,59
+6.1,T2star,2:05,white matter,242.1630449,sub-P056,low,PD,13,54
+6.1,T2star,2:05,white matter,242.1646487,sub-P057,CTRL,CTRL,,64
+6.1,T2star,2:05,white matter,331.4960391,sub-P059,, ,,
+6.1,T2star,2:05,white matter,256.5868206,sub-P060,adv,PD,43,64
+6.1,T2star,2:05,white matter,295.8208135,sub-P061,low,PD,15,58
+6.1,T2star,2:05,white matter,231.9525831,sub-P062,med,PD,28,56
+6.1,T2star,2:05,white matter,220.9678634,sub-P064,low,PD,8,54
+6.1,T2star,2:05,white matter,289.4089457,sub-P065,low,PD,20,40
+6.1,T2star,2:05,white matter,227.3886533,sub-P066,adv,PD,58,46
+6.1,T2star,2:05,white matter,328.6537804,sub-P067,adv,PD,43,69
+6.1,T2star,2:05,white matter,308.9573827,sub-P068,low,PD,16,61
+6.1,T2star,2:05,white matter,314.1647306,sub-P069,adv,PD,42,70
+6.1,T2star,2:05,white matter,298.9235087,sub-P070,med,PD,26,66
+6.1,T2star,2:05,white matter,240.2635961,sub-P071,, ,,
+6.1,T2star,2:05,white matter,290.6527934,sub-P072,med,PD,29,60
+6.1,T2star,2:05,white matter,377.353226,sub-P073,low,PD,21,70
+6.1,T2star,2:05,white matter,249.1594193,sub-P074,med,PD,30,68
+6.1,T2star,2:05,white matter,265.5848578,sub-P075,med,PD,25,66
+6.1,T2star,2:05,white matter,284.9232565,sub-P076,adv,PD,39,48
+6.1,T2star,2:05,white matter,304.588549,sub-P077,low,PD,13,53
+6.1,T2star,2:05,white matter,243.2197089,sub-P078,low,PD,21,67
+6.1,T2star,2:05,white matter,253.34995,sub-P079,low,PD,0,59
+6.1,T2star,2:05,white matter,272.9588092,sub-P080,low,PD,11,55
+6.1,T2star,2:05,white matter,225.5076489,sub-P081,low,PD,5,43
+6.1,T2star,2:05,white matter,234.7827003,sub-P082,med,PD,25,71
+6.1,T2star,2:05,white matter,257.2481855,sub-P083,low,PD,15,63
+6.1,T2star,2:05,white matter,211.2554713,sub-P084,adv,PD,43,78
+6.1,T2star,2:05,white matter,287.6675835,sub-P085,, ,,
+6.1,T2star,2:05,white matter,253.0174291,sub-P087,adv,PD,47,71
+6.1,T2star,2:05,white matter,260.3976175,sub-P088,med,PD,26,64
+6.1,T2star,2:05,white matter,260.340282,sub-P089,CTRL,CTRL,,68
+6.1,T2star,2:05,white matter,309.4783695,sub-P090,adv,PD,46,83
+6.1,T2star,2:05,white matter,289.2199127,sub-P091,adv,PD,45,76
+6.1,T2star,2:05,white matter,250.3890216,sub-P092,low,PD,16,67
+6.1,T2star,2:05,white matter,245.8489715,sub-P093,adv,PD,58,79
+6.1,T2star,2:05,white matter,280.3381782,sub-P094,CTRL,CTRL,,72
+6.1,T2star,2:05,white matter,241.235905,sub-P096,CTRL,CTRL,,71
+6.1,T2star,2:05,white matter,269.0723993,sub-P098,CTRL,CTRL,,70
+6.1,T2star,2:05,white matter,275.881287,sub-P099,CTRL,CTRL,,39
+6.1,T2star,2:05,white matter,192.4330141,sub-P101,CTRL,CTRL,,65
+6.1,T2star,2:05,white matter,219.5379036,sub-P102,med,PD,24,71
+6.1,T2star,2:05,white matter,285.6334016,sub-P103,CTRL,CTRL,,68
+6.1,T2star,2:05,white matter,222.6994414,sub-P104,CTRL,CTRL,,75
+6.1,T2star,2:05,white matter,236.6785573,sub-P105,CTRL,CTRL,,62
+6.1,T2star,2:05,white matter,234.9967946,sub-P106,CTRL,CTRL,,68
+6.1,T2star,2:05,white matter,228.0885934,sub-P107,low,PD,17,66
+6.1,T2star,2:05,white matter,254.6650898,sub-P108,CTRL,CTRL,,55
+6.1,T2star,2:05,white matter,254.9113433,sub-P109,CTRL,CTRL,,56
+6.1,T2star,2:05,white matter,238.4443214,sub-P111,CTRL,CTRL,,59
+6.1,T2star,2:05,white matter,247.8862759,sub-P112,CTRL,CTRL,,66
+6.1,T2star,2:05,white matter,275.2385822,sub-P113,CTRL,CTRL,,73
+6.1,T2star,2:05,white matter,258.2409922,sub-P002,low,PD,19,68
+6.1,T2star,2:05,white matter,305.3688472,sub-P016,, ,,
+6.1,T2star,2:05,white matter,307.6569034,sub-P021,, ,,
+6.1,T2star,2:05,white matter,303.7126528,sub-P026,, ,,
+6.1,T2star,2:05,white matter,268.5200583,sub-P010,, ,,
+6.1,T2star,2:05,white matter,307.5377819,sub-P028,, ,,
+6.1,T2star,2:05,white matter,321.1606593,sub-A057,,CTRL,,50
+6.1,T2star,2:05,white matter,296.2230392,sub-A035,,CTRL,,49
+6.1,T2star,2:05,white matter,265.8844611,sub-A058,,CTRL,,52
+6.1,T2star,2:05,white matter,292.524639,sub-A056,,CTRL,,46
+6.1,T2star,2:05,white matter,254.7614815,sub-A002,,CTRL,,67
+6.1,T2star,2:05,white matter,295.4359622,sub-A005,,CTRL,,59
+6.1,T2star,2:05,white matter,228.6263413,sub-A016,,CTRL,,57
+6.1,T2star,2:05,white matter,290.2212102,sub-A021,,CTRL,,47
+6.1,T2star,2:05,white matter,282.7175164,sub-A019,,CTRL,,69
+6.1,T2star,2:05,white matter,401.9419567,sub-A017,,CTRL,,81
+6.1,T2star,2:05,white matter,281.6954306,sub-A001,,CTRL,,58
+6.1,T2star,2:05,white matter,303.672217,sub-A055,,CTRL,,52
+6.1,T2star,2:05,white matter,304.8319515,sub-A012,,CTRL,,77
+6.1,T2star,2:05,white matter,310.6667034,sub-A015,,CTRL,,79
+6.1,T2star,2:05,white matter,240.8800611,sub-A047,,CTRL,,53
+6.1,T2star,2:05,white matter,336.879373,sub-A022,,CTRL,,55
+6.1,T2star,2:05,gray matter,363.5068261,sub-P003,adv,PD,37,70
+6.1,T2star,2:05,gray matter,296.6003543,sub-P009,adv,PD,59,69
+6.1,T2star,2:05,gray matter,311.5667918,sub-P011,med,PD,22,64
+6.1,T2star,2:05,gray matter,302.515438,sub-P013,med,PD,29,65
+6.1,T2star,2:05,gray matter,348.0442943,sub-P014,med,PD,27,66
+6.1,T2star,2:05,gray matter,325.8270392,sub-P017,low,PD,7,70
+6.1,T2star,2:05,gray matter,348.5509315,sub-P018,med,PD,22,74
+6.1,T2star,2:05,gray matter,283.2970092,sub-P019,adv,PD,42,62
+6.1,T2star,2:05,gray matter,261.3386026,sub-P020,med,PD,23,66
+6.1,T2star,2:05,gray matter,294.4551887,sub-P022,adv,PD,41,48
+6.1,T2star,2:05,gray matter,311.7303943,sub-P023,low,PD,17,62
+6.1,T2star,2:05,gray matter,376.0446113,sub-P024,low,PD,12,82
+6.1,T2star,2:05,gray matter,307.2957196,sub-P027,low,PD,21,65
+6.1,T2star,2:05,gray matter,301.915802,sub-P029,low,PD,13,57
+6.1,T2star,2:05,gray matter,299.8542346,sub-P030,CTRL,CTRL,,38
+6.1,T2star,2:05,gray matter,327.8998443,sub-P032,adv,PD,43,66
+6.1,T2star,2:05,gray matter,314.3467426,sub-P033,CTRL,CTRL,,62
+6.1,T2star,2:05,gray matter,291.7662208,sub-P035,med,PD,23,68
+6.1,T2star,2:05,gray matter,366.5854804,sub-P037,adv,PD,47,82
+6.1,T2star,2:05,gray matter,313.0682226,sub-P038,low,PD,20,79
+6.1,T2star,2:05,gray matter,371.9708717,sub-P039,adv,PD,41,68
+6.1,T2star,2:05,gray matter,300.3927272,sub-P040,med,PD,26,72
+6.1,T2star,2:05,gray matter,282.693799,sub-P041,med,PD,24,64
+6.1,T2star,2:05,gray matter,270.5925561,sub-P042,med,PD,24,56
+6.1,T2star,2:05,gray matter,340.9696655,sub-P043,, ,,
+6.1,T2star,2:05,gray matter,386.7393957,sub-P045,adv,PD,34,72
+6.1,T2star,2:05,gray matter,329.7257799,sub-P046,, ,,
+6.1,T2star,2:05,gray matter,250.6153138,sub-P047,, ,,
+6.1,T2star,2:05,gray matter,309.4875393,sub-P048,adv,PD,34,64
+6.1,T2star,2:05,gray matter,260.3116678,sub-P049,CTRL,CTRL,,83
+6.1,T2star,2:05,gray matter,299.5790062,sub-P050,CTRL,CTRL,,57
+6.1,T2star,2:05,gray matter,299.7670436,sub-P052,med,PD,27,48
+6.1,T2star,2:05,gray matter,314.0130104,sub-P053,low,PD,20,66
+6.1,T2star,2:05,gray matter,349.5271716,sub-P055,med,PD,30,59
+6.1,T2star,2:05,gray matter,252.8937582,sub-P056,low,PD,13,54
+6.1,T2star,2:05,gray matter,267.7428731,sub-P057,CTRL,CTRL,,64
+6.1,T2star,2:05,gray matter,352.3954521,sub-P059,, ,,
+6.1,T2star,2:05,gray matter,279.6444351,sub-P060,adv,PD,43,64
+6.1,T2star,2:05,gray matter,324.6379863,sub-P061,low,PD,15,58
+6.1,T2star,2:05,gray matter,251.3910091,sub-P062,med,PD,28,56
+6.1,T2star,2:05,gray matter,244.7116066,sub-P064,low,PD,8,54
+6.1,T2star,2:05,gray matter,316.7864376,sub-P065,low,PD,20,40
+6.1,T2star,2:05,gray matter,253.436906,sub-P066,adv,PD,58,46
+6.1,T2star,2:05,gray matter,356.4194114,sub-P067,adv,PD,43,69
+6.1,T2star,2:05,gray matter,328.455108,sub-P068,low,PD,16,61
+6.1,T2star,2:05,gray matter,320.9730754,sub-P069,adv,PD,42,70
+6.1,T2star,2:05,gray matter,315.6744714,sub-P070,med,PD,26,66
+6.1,T2star,2:05,gray matter,255.8825285,sub-P071,, ,,
+6.1,T2star,2:05,gray matter,315.9150779,sub-P072,med,PD,29,60
+6.1,T2star,2:05,gray matter,391.1626562,sub-P073,low,PD,21,70
+6.1,T2star,2:05,gray matter,270.2442285,sub-P074,med,PD,30,68
+6.1,T2star,2:05,gray matter,282.4351362,sub-P075,med,PD,25,66
+6.1,T2star,2:05,gray matter,303.2572495,sub-P076,adv,PD,39,48
+6.1,T2star,2:05,gray matter,330.9484196,sub-P077,low,PD,13,53
+6.1,T2star,2:05,gray matter,262.9385832,sub-P078,low,PD,21,67
+6.1,T2star,2:05,gray matter,276.9308902,sub-P079,low,PD,0,59
+6.1,T2star,2:05,gray matter,292.1950676,sub-P080,low,PD,11,55
+6.1,T2star,2:05,gray matter,245.902811,sub-P081,low,PD,5,43
+6.1,T2star,2:05,gray matter,250.0661937,sub-P082,med,PD,25,71
+6.1,T2star,2:05,gray matter,267.6971943,sub-P083,low,PD,15,63
+6.1,T2star,2:05,gray matter,210.3331677,sub-P084,adv,PD,43,78
+6.1,T2star,2:05,gray matter,304.3350309,sub-P085,, ,,
+6.1,T2star,2:05,gray matter,266.9406648,sub-P087,adv,PD,47,71
+6.1,T2star,2:05,gray matter,265.4555858,sub-P088,med,PD,26,64
+6.1,T2star,2:05,gray matter,276.4773325,sub-P089,CTRL,CTRL,,68
+6.1,T2star,2:05,gray matter,317.3729593,sub-P090,adv,PD,46,83
+6.1,T2star,2:05,gray matter,293.3321045,sub-P091,adv,PD,45,76
+6.1,T2star,2:05,gray matter,275.3660639,sub-P092,low,PD,16,67
+6.1,T2star,2:05,gray matter,244.1031498,sub-P093,adv,PD,58,79
+6.1,T2star,2:05,gray matter,293.4747226,sub-P094,CTRL,CTRL,,72
+6.1,T2star,2:05,gray matter,256.6278405,sub-P096,CTRL,CTRL,,71
+6.1,T2star,2:05,gray matter,299.3505585,sub-P098,CTRL,CTRL,,70
+6.1,T2star,2:05,gray matter,310.2873175,sub-P099,CTRL,CTRL,,39
+6.1,T2star,2:05,gray matter,195.7211525,sub-P101,CTRL,CTRL,,65
+6.1,T2star,2:05,gray matter,231.801197,sub-P102,med,PD,24,71
+6.1,T2star,2:05,gray matter,301.2369909,sub-P103,CTRL,CTRL,,68
+6.1,T2star,2:05,gray matter,238.489891,sub-P104,CTRL,CTRL,,75
+6.1,T2star,2:05,gray matter,263.1623164,sub-P105,CTRL,CTRL,,62
+6.1,T2star,2:05,gray matter,253.7970041,sub-P106,CTRL,CTRL,,68
+6.1,T2star,2:05,gray matter,245.8259135,sub-P107,low,PD,17,66
+6.1,T2star,2:05,gray matter,278.1313588,sub-P108,CTRL,CTRL,,55
+6.1,T2star,2:05,gray matter,281.0028265,sub-P109,CTRL,CTRL,,56
+6.1,T2star,2:05,gray matter,251.6518544,sub-P111,CTRL,CTRL,,59
+6.1,T2star,2:05,gray matter,268.932271,sub-P112,CTRL,CTRL,,66
+6.1,T2star,2:05,gray matter,296.2191303,sub-P113,CTRL,CTRL,,73
+6.1,T2star,2:05,gray matter,276.6402133,sub-P002,low,PD,19,68
+6.1,T2star,2:05,gray matter,311.9492912,sub-P016,, ,,
+6.1,T2star,2:05,gray matter,325.1754626,sub-P021,, ,,
+6.1,T2star,2:05,gray matter,327.4795548,sub-P026,, ,,
+6.1,T2star,2:05,gray matter,295.0882789,sub-P010,, ,,
+6.1,T2star,2:05,gray matter,337.2894607,sub-P028,, ,,
+6.1,T2star,2:05,gray matter,344.6892047,sub-A057,,CTRL,,50
+6.1,T2star,2:05,gray matter,307.1437104,sub-A035,,CTRL,,49
+6.1,T2star,2:05,gray matter,286.5955155,sub-A058,,CTRL,,52
+6.1,T2star,2:05,gray matter,321.0931369,sub-A056,,CTRL,,46
+6.1,T2star,2:05,gray matter,279.1528687,sub-A002,,CTRL,,67
+6.1,T2star,2:05,gray matter,313.695755,sub-A005,,CTRL,,59
+6.1,T2star,2:05,gray matter,253.2679743,sub-A016,,CTRL,,57
+6.1,T2star,2:05,gray matter,301.2583116,sub-A021,,CTRL,,47
+6.1,T2star,2:05,gray matter,298.0754289,sub-A019,,CTRL,,69
+6.1,T2star,2:05,gray matter,441.4163495,sub-A017,,CTRL,,81
+6.1,T2star,2:05,gray matter,304.2377477,sub-A001,,CTRL,,58
+6.1,T2star,2:05,gray matter,310.9612906,sub-A055,,CTRL,,52
+6.1,T2star,2:05,gray matter,313.8776539,sub-A012,,CTRL,,77
+6.1,T2star,2:05,gray matter,321.7465235,sub-A015,,CTRL,,79
+6.1,T2star,2:05,gray matter,264.2088449,sub-A047,,CTRL,,53
+6.1,T2star,2:05,gray matter,352.4111138,sub-A022,,CTRL,,55
