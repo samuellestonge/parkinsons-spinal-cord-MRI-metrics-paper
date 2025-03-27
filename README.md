@@ -1,29 +1,7 @@
-## Preprint template
+# Parkinson’s disease in the spinal cord: an exploratory study to establish T2*w, MTR and diffusion-weighted imaging metric values
 
-Template repository for NeuroLibre reproducibe preprint submissions.
+Parkinson's disease (PD) is primarily defined by brain pathology, including dopamine neuron degeneration and 𝛼-synuclein aggregation. Emerging evidence suggests that the spinal cord is also affected, with ex-vivo studies reporting abnormal 𝛼-synuclein protein aggregation within spinal cord axons of PD patients. While advanced imaging techniques such as DTI, NODDI, T2*w, and MTR have demonstrated potential for detecting PD-related changes in the brain, their application to spinal cord alterations remains unexplored. 
 
-### Step 1: Click `Use this template button` and name your new repository
+This study is the first to investigate MRI-derived metrics in the spinal cord of PD patients, comparing them to healthy controls, to assess potential microstructural changes. Despite significant findings in functional MRI studies using the same cohort, this study found little to no significant microstructural or structural differences in the spinal cord between PD patients and healthy controls, aligning with recent findings in PD mouse models. These results highlight the need for further research to better understand how PD-related alterations in the spinal cord compare to normal aging processes and relate to functional changes.
 
-### Step 2: Do the following changes in [_config.yml](content/_config.yml)
-
-```yaml
-title                       : "NeuroLibre preprint template"  # Add your title
-author                      : John Doe, Jane Doe  # Add author names
-```
-```yaml
-repository:
-  url: https://github.com/neurolibre/template  # The URL to your new repository
-```
-> At this stage, you are ready to use [RoboNeuro preview service](https://robo.neurolibre.org) to get your first book build.
----
-### Step 3: Add your executable content under the `content` directory
-
-* ✅ You can add a mixture of `Jupyter Notebooks`, `MyST` formatted markdown and plain text markdown files.
-* ✅ You can organize your content in subfolders.
-* ❌ We don't accept (non-executable) plain text markdown files alone.
-
-### Step 4: Edit [_toc.yml](content/_toc.yml) according to your new content 
-
-### Step 5: Define your execution environment under the `binder` directory
-
-You can use any [BinderHub configuration files](https://mybinder.readthedocs.io/en/latest/using/config_files.html) that you need.
+![Figure4_boxplots_per_region](https://github.com/user-attachments/assets/bc7d4f34-7975-498e-ad95-33772bc79eaa)
