@@ -5,12 +5,92 @@ numbering:
     template: Fig. %s
 ---
 
-## Articles with code vs articles from code
+<p>
+<center>
+<b>
+<h3>
+Parkinson’s disease in the spinal cord: an exploratory study to establish T2*w, MTR and diffusion-weighted imaging metric values
+</h3>
 
-One of the main advantages of articles written in MyST Markdown is the fact that you can bundle several types of outputs (such as figures, tables, equations, etc.) from your Jupyter Notebooks in a single document. This is made possible by the use of `directives`, which are special commands that instruct MyST Markdown to include the content of a notebook, a file, or a chunk of text in your document or cite references. You can use DOIs, [](https://doi.org/10.31219/osf.io/h89js) or a local bibliography file (`paper.bib`) for citations @Boudreau2023.
+<p style="text-align:center;">
+Samuelle St-Onge<sup>1,2</sup>, Camille Coustaury<sup>1</sup>, Caroline Landelle<sup>3</sup>, Linda Solstrand Dahlberg<sup>3</sup>, Ovidiu Lungu<sup>3</sup>, Julien Doyon<sup>3</sup>, Benjamin De Leener<sup>1,2,4</sup>
+</p>
+</b>
+
+<ul style="list-style-type: none">
+<li><sup>1</sup>NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montreal, Montreal, QC, Canada</li>
+<li><sup>2</sup>CHU Sainte-Justine Research Centre, Montreal, QC, Canada</li>
+<li><sup>3</sup>McConnell Brain Imaging Centre, Department of Neurology and Neurosurgery, Montreal Neurological Institute, McGill University, Montreal, QC, Canada</li>
+<li><sup>4</sup>Computer Engineering and Software Engineering, Polytechnique Montréal, Montreal, QC, Canada</li>
+</ul>
+</center>
+</p>
+
+## Abstract
+
+Parkinson's disease (PD) is primarily defined by brain pathology, including dopamine neuron degeneration and 𝛼-synuclein aggregation. Emerging evidence suggests that the spinal cord is also affected, with ex-vivo studies reporting abnormal 𝛼-synuclein protein aggregation within spinal cord axons of PD patients. While advanced imaging techniques such as DTI, NODDI, T2*w, and MTR have demonstrated potential for detecting PD-related changes in the brain, their application to spinal cord alterations remains unexplored. This study is the first to investigate MRI-derived metrics in the spinal cord of PD patients, comparing them to healthy controls, to assess potential microstructural changes. Despite significant findings in functional MRI studies using the same cohort, this study found little to no significant microstructural or structural differences in the spinal cord between PD patients and healthy controls, aligning with recent findings in PD mouse models. These results highlight the need for further research to better understand how PD-related alterations in the spinal cord compare to normal aging processes and relate to functional changes.
+
+## 1. Introduction
+
+Parkinson's disease (PD) is a neurodegenerative disease that is defined by both the degeneration of dopamine-producing neurons inside the substantia nigra (Nyatega et al., 2022) and the abnormal accumulation of 𝛼-synuclein inside neurons, forming abnormal protein aggregates commonly referred to as Lewy bodies (Bianco et al., 2002; Muller et al., 2005). While PD has traditionally been linked to brain pathology, indications of the disease have been identified in the spinal cord, notably the presence of abnormal aggregation of 𝛼-synuclein proteins inside spinal cord axons (Nardone et al., 2020). 
+
+Post-mortem studies have reported a higher number of 𝛼-synuclein aggregates in the spinal cord of PD patients compared to their healthy counterparts (Braak et al., 2007; Del Tredici & Braak, 2012). While cases of 𝛼-synuclein aggregates found exclusively in the spinal cord were rare, the presence of 𝛼-synucleinopathy was found common in the spinal cord when it was also present in the brain, which suggests that PD may affect the midbrain before descending in the spinal cord (Del Tredici et al., 2012). There is also extensive evidence indicating that PD may start in the enteric nervous system (ENS) before progressing to the midbrain (Del Tredici & Braak, 2012, 2016). Additionally, it has been hypothesized that there may be two types of PD: one that starts in the ENS and propagates to the brain, and another that begins in the brain before spreading to the ENS (Horsager et al., 2020; Leclair-Visonneau et al., 2020). Nonetheless, the origin of PD within the body remains under debate, along with the mechanisms through which the disease spreads to the spinal cord.
+
+The work of Bloch et al., (2006) has shown a higher concentration of 𝛼-synuclein in the lower brainstem than in the spinal cord, which is consistent with the findings of Del Tredici et al. (2012). Furthermore, Del Tredici & Braak (2012) identified globules filled with 𝛼-synuclein in individuals with advanced PD, as opposed to small varicosities in earlier stages. These findings align with those of Sekigawa et al. (2015), who observed axonal swelling associated to 𝛼-synuclein in the spinal cord of transgenic mice. These results collectively suggest that the spinal cord is indeed affected by PD, hence the relevance of studying its microstructure in PD patients. Nevertheless, in-vivo spinal cord studies for PD are currently limited, and various aspects related to how PD affects the spinal cord microstructure are yet to be understood. 
+
+The impact of PD in the human spinal cord has been explored by Landelle et al. (2023) using functional magnetic resonance imaging (fMRI), where a decrease of functional connectivity has been observed with disease progression in the cervical spinal cord. Recently, Combes et al. (2024) have studied structural MRI in the spinal cord of transgenic PD mice. Their results revealed no structural changes in the spinal cord of the PD mouse compared with their non-transgenic counterparts. However, no studies have investigated MRI-derived metrics to assess the microstructural impact of PD on the human spinal cord. 
+
+Diffusion-weighted imaging (DWI) is a promising modality to quantify spinal cord microstructure, providing information regarding the diffusion of the water molecules that can indicate tissue abnormalities and damage. The diffusion tensor imaging (DTI) model is amongst the most widely used diffusion MRI models, allowing to measure fractional anisotropy (FA), mean diffusivity (MD), radial diffusivity (RD) and axial diffusivity (AD) (O’Donnell & Westin, 2011). Although a few studies have investigated DTI to quantify gray matter integrity such as in healthy aging (Pfefferbaum et al., 2010), DTI is predominantly used to study the white matter, given its strong anisotropy (Assaf & Pasternak, 2008). Recent work has demonstrated the usefulness of DTI to unveil microstructural tissue damage in PD patients for several regions of the brain, such as the substantia nigra and corpus callosum (Atkinson-Clement et al., 2017; Kotian et al., 2020). Notably, a decrease in FA has been recorded with PD progression in the brain (Kotian et al., 2020). Although DTI metrics demonstrated potential for identifying PD-related microstructural changes in the brain, to our knowledge, these metrics have not yet been studied in the spinal cord of PD patients. Another DWI model that shows promise is the Neurite Orientation Dispersion and Density Index (NODDI) (Zhang et al., 2012), which allows the tissue voxel to be compartmentalized into intracellular, extracellular and cerebrospinal fluid compartments. NODDI metrics include the orientation dispersion index (ODI), the isotropic volume fraction (FISO) and neurite density (FICVF). Brain-focused studies reported reduced values for FICVF and ODI in the substantia nigra pars compacta among individuals with PD (Kamagata, Hatano, & Aoki, 2016; Kamagata, Hatano, Okuzumi, et al., 2016). This phenomenon is suspected to be linked to the loss of dopaminergic neurons associated with PD in the brain (Kamagata, Hatano, & Aoki, 2016). However, to our knowledge, no in vivo studies have demonstrated neuronal loss related to PD in the spinal cord. 
+
+Others have explored T2\*-weighted (T2\*w), or its reciprocal R2* (1/T2\*), as a promising method for identifying PD-related changes in the brain. In their study, Schwarz et al. (2018) noticed a decrease in T2\*w signal inside the substantia nigra and nigrosomes in subjects with PD compared to healthy individuals. Since T2\*w is sensitive to changes in susceptibility, this decrease is thought to be attributed to iron accumulation, which is well documented to be associated with PD in the brain (Schwarz et al., 2018; Tambasco et al., 2019; Zeng et al., 2024). Studies suggest that iron deposition is responsible for triggering the activation of immune cells in the brain, which in turn release substances that cause inflammation and cause oxidative stress. This process may aggravate the loss of dopaminergic neurons and contribute to disease progression in PD patients (Zeng et al., 2024). Iron accumulation related to PD in the spinal cord has not been reported to date. However, given that the involvement of the spinal cord in PD is still not fully understood, exploring T2\*w in the spinal cord of PD patients may reveal subtle changes in tissue susceptibility that were not identified in previous post-mortem studies.  Similarly, the magnetization transfer ratio (MTR) has demonstrated relevance in the context of PD in the brain, where studies have noted a decrease in MTR in several brain regions such as the substantia nigra in early PD stages, which is thought to also be linked to iron deposition in the brain (Anik et al., 2007; Tambasco et al., 2003, 2011). However, despite the interest in studying T2\*w and MTR metrics in the PD brain, their investigation for PD in the spinal cord remains unexplored.
+
+The present study aims to explore the potential of quantitative MRI to detect microstructural changes in the spinal cord due to Parkinson’s disease. We aim at establishing relationships between PD and T2\*w, MTR, DTI and NODDI values in the cervical spinal cord. Disease progression will be assessed using the motor component of the Unified Parkinson’s Disease Rating Scale (UPDRS) (Movement Disorder Society Task Force on Rating Scales for Parkinson’s Disease, 2003) to correlate these metrics with motor symptom severity. The study also seeks to evaluate whether DTI, NODDI, T2\*w and MTR metrics can be used to differentiate PD patients from their healthy counterparts, which could lead to identifying potential biomarkers for PD in the spinal cord. 
+
+## 2. Methods
+
+### 2.1 Data acquisition
 
 
-:::{figure} static/banner.jpg
+The study involved the same participants as Landelle et al. (2023), which have been scanned at the Montreal Neurological Institute-Hospital through the Clinical, Biospecimen, Imaging, and Genetic (C-BIG) repository, with a 3 Tesla MRI scanner (Magnetom Prisma, Siemens, Erlangen, Germany). All participants gave their written consent in accordance with the Helsinki Declaration, and the experiment was approved by the local ethics committee (MUCH REB 2019-4626). The acquisition protocol included T1w, T2\*w, magnetization transfer (MT) and a multi-shell diffusion MRI sequence. The detailed acquisition parameters for T2\*w, MTR and DWI are presented in Figure 1. Figure 2 shows examples of raw data acquisitions for a single subject. Because of the limited field-of-view of the acquisitions, only the cervical spinal cord from spinal levels C2 to C5 was considered for this study. 
+
+Participants included both subjects with PD and healthy controls (HC). Individuals with PD underwent clinical interviews and neurological examinations, including an assessment of disease severity with the UPDRS. Using Part III of the UPDRS, which corresponds to the assessment of motor symptoms, participants were further categorized into three groups: Low PD (UPDRSIII 0-20), Med PD (UPDRSIII 20-30), Adv PD (UPDRSIII 30-60). Figure 1B shows the number of subjects per category, for each sequence. The age, sex and UPDRSIII score distribution of the subjects are shown in Figure 1.  
+
+:::{figure} #fig1cell
+:label: fig1
+
+:::{figure} #fig2cell
+:label: fig2
+
+### 2.2 Data pre-processing and metric extraction
+
+FA, MD, RD and AD metrics were computed from the DWI images using DTI from DIPY via the Spinal Cord Toolbox (SCT) (De Leener et al., 2017). ODI, FISO and FICVF metrics were computed using the NODDI Matlab Toolbox (UCL Microstructure Imaging Group, 2021). The individual MTR, T2\*w and DWI images underwent initial preprocessing using SCT, which first included spinal cord segmentation using the sct_propseg algorithm and manual corrections when necessary. Because of the thick slices of T2\*w (2 mm), MTR and DWI (5 mm) acquisitions, it was difficult to label the vertebrae on these images directly. For this reason, vertebral labeling was performed on T1w acquisitions (slice thickness = 1.3 mm) and were coregistered to the PAM50 template (De Leener et al., 2018). Then, the generated warping fields were used to initialize the coregistration of T2\*w, MTR, DTI and NODDI images to the PAM50 template. Thus we generated average group-level metric maps (i.e., average pixel wise intensity) for both HC and PD subjects, at spinal levels C2 to C5 in the PAM50 space. 
+
+Using the atlas from the co-registered PAM50 template, we extracted DTI metrics from the white matter and its subregions (dorsal columns, ventral funiculi, and lateral funiculi) to quantify axonal damage which may be linked to the presence of α-synuclein aggregates in white matter axons, leading to reduced diffusion anisotropy. Similarly, NODDI metrics were extracted from the white matter and its subregions for their sensitivity to axonal integrity and changes in diffusion orientation. Additionally, NODDI metrics were analyzed in the gray matter to detect potential alterations in dendrite orientation and integrity. MTR values were extracted from the white matter and its subregions due to their sensitivity to demyelination, often linked to axonal loss. Finally, the WM/GM ratio was calculated from T2\*w images using white and gray matter values extracted using the PAM50 atlas. This approach provides a quantitative measure as opposed to using only gray matter values, as the T2\*w signal can vary between acquisitions. The ratio was chosen because gray matter naturally contains higher iron levels than white matter, and T2\*w is particularly sensitive to iron content. 
+
+Importantly, all metrics were extracted using the spinal levels (Frostell et al. (2016), SCT v6.1) instead of the vertebral levels to offer a representation that reflects more accurately the functional organization of the spinal cord into different rootlets, thereby enabling more robust comparisons with the findings of Landelle et al. (2023) in functional MRI. The cross-sectional area of the spinal cord was also computed on all individual T2\*w images via sct_process_segmentation from SCT. 
+
+### 2.3 Effect of groups and UPDRSIII score on MRI metrics
+
+We investigated the relationships between PD and MRI-derived metrics in the cervical spinal cord by examining how these metrics varied across different groups (controls, low PD, medium PD, and advanced PD). To assess the impact of group on DTI, NODDI, T2\*w, and MTR metrics, we performed an analysis of variance (ANOVA), combining spinal levels C2 to C5. Age was included as a covariate to control for its potential confounding effects. Post-hoc t-tests were performed on metrics that showed significant results (p < 0.05) to further explore group differences. 
+
+To investigate how disease severity may affect our metrics, we also used an ordinary least-squares (OLS) regression model, to investigate the relationships between DTI, NODDI, T2\*w, MTR metrics and the UPDRSIII scores, while controlling for age as a potential confounder. For each metric, the OLS analysis was performed for spinal levels C2 to C5 separately. DTI, NODDI and MTR metrics were studied in the white matter and its subregions (dorsal columns, ventral funiculi, lateral funiculi), to identify potential changes which may be attributed to the accumulation of α-synuclein inside white matter axons. Due to its ability to identify changes in gray matter dendrites, the NODDI was also studied in the gray matter, to investigate whether differences in these metrics could be identified with an increasing UPDRSIII score. Finally, the white matter to gray matter ratio (WM/GM) was studied on the T2\*w images. To control for the risk of type I errors due to multiple comparisons, the Bonferroni correction was applied by dividing the significance threshold (α = 0.05) by the number of comparisons, which corresponded to the number of spinal cord regions assessed for each metric. Cross-sectional area (CSA) was also studied using the above-mentioned ANOVA and OLS models to detect potential structural changes in the cervical spinal cord associated with PD. 
+
+## 3. Results
+### 3.1 Average metric maps
+
+Figure 3 shows the average metric maps for DTI, NODDI and MTR, obtained by registering the metrics to the PAM50 template and computing the pixel-by-pixel average intensity for each subject category (HC, Low PD, Med PD and Adv PD).  
+
+:::{figure} #fig3cell
+:label: fig3
+
+According to the average metric maps in Figure 3, we notice an increase in ODI and a decrease in FA within the white matter among PD participants compared to their healthy counterparts. Additionally, a decrease in global intensity is observed as we progress through the more caudal spinal levels, which is particularly apparent in MTR and FA maps. 
+
+## 3.2 Comparisons across groups (healthy controls, low PD, medium PD and advanced PD)
+
+Figure 4 presents the results of ANOVA comparing DTI, NODDI, MTR, and T2\*w metrics across the different groups (HC, low PD, med PD, and adv PD). In the white matter, our results showed a significant effect of the group on FA and RD metrics, for the combined spinal levels C2 to C5 (FA : p-Group = 0.0412; RD : p-Group = 0.0138). Our analysis also revealed  a significant effect of the group on the WM/GM in T2\*w (p-Group = 0.0358). Pairwise t-tests with false discovery rate (FDR) correction were applied to compare low PD, med PD and adv PD subjects with the HC group (Table 1), where results showed a significant difference between HC and adv PD groups for the WM/GM in T2\*w, and between HC and med PD for RD in the WM. 
+
+:::{figure} #fig4cell
+:label: fig4
 
 A funny take on the difference between articles with code and articles from code.
 :::
@@ -22,61 +102,7 @@ Let's see how directives work with a simple example by rendering a video from an
 :width: 100%
 
 Video reused from [mystmd.org](https://mystmd.org) (CC-BY-4.0, [source](https://mystmd.org/guide)).
-:::
-
-Yet, the main purpose of this article is to not to showcase all the [authoring tools](https://mystmd.org/guide/typography) available in MyST Markdown, but rather to provide a simple template to get you started with your own article to publish on NeuroLibre.
-
-
-:::{seealso}
-You can refer to the [MyST Guide](https://mystmd.org/guide/typography) to see all the cool stuff you can do with MyST Markdown, such as creating a `mermaid` diagram like this:
-
-```{mermaid}
-flowchart LR
-  A[Jupyter Notebook] --> C
-  B[MyST Markdown] --> C
-  C(mystmd) --> D{AST}
-  D <--> E[LaTeX]
-  E --> F[PDF]
-  D --> G[Word]
-  D --> H[React]
-  D --> I[HTML]
-  D <--> J[JATS]
-```
-
-Or you can see how hover-over links work for [wikipedia sources](https://en.wikipedia.org/wiki/Wikipedia#:~:text=Wikipedia%20is%20a%20free%20content,and%20the%20wiki%20software%20MediaWiki.) and cross references figures (e.g., [Fig. %sf](#fig1), [Figure %sf](#fig2), [Video %sf](#figvid)).
-:::
-
-Typically, when publishing an article following the traditional route, you would write your article in a word processor where you need to deal with the generation of figures, tables etc. elsewhere, and then bring them together in the final document manually. This eventually leads to a cluttered set of files, code, dependencies, and even data that are hard to manage in the long run. If you've been publishing articles for a while, you probably know what we are talking about:
-
-> Where is the endnote reference folder I used for this article?
-
-> What is the name of the script I used to generate the second figure? This script has the title `fig_2_working.py` and is in the  `karakuzu_et_al_2016_mrm` folder, but it does not seem to be the one that generated the figure...
-
-> I cannot create the same runtime environment that I used for this analysis in my current project because `python 3.8` is not available in the current distribution of Anaconda... It is so tricky to get this running on my new computer...
-
-MyST Markdown offers a powerful solution to this by allowing you to create an article ✨from code✨, linking all the pieces of your executable and narrative content together in the body of this one document: your canvas.
-
-:::{figure} https://cdn.curvenote.com/0191bd75-1494-72f5-b48a-a0aaad296e4c/public/reuse-jupyter-output-2e6bfa91772dbb6bbc022dc6aee80d2b.webp
-:label: fig0
-
-An article with two figures created in Jupyter Notebooks. Each figure can be labeled directly in the notebook and reused in any other page directly.
-
-Figure reused from [mystmd.org](https://mystmd.org) (CC-BY-4.0, [source](https://mystmd.org/guide/reuse-jupyter-outputs#reuse-jupyter-outputs)).
-:::
-
-
-
-For example, the following figure is the output of the `content/fig_1.ipynb` notebook:
-
-:::{figure} #fig1cell
-:label: fig1
-
-An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository. Check `content/figure_1.ipynb` to see how this figure was generated and where the label `#fig1cell` is defined.
-:::
-
-Here is another figure generated from another notebook:
-
-:::{figure} #fig2cell
+:::ell
 :label: fig2
 
 An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.  Check `content/figure_2.md` to see how this figure was generated and where the label `#fig2cell` is defined.
