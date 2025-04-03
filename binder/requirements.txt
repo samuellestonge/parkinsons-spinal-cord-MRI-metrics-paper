@@ -1,3 +1,8 @@
 plotly
 networkx
 pandas
+plotly-express
+pillow
+statsmodels
+ipython
+dash

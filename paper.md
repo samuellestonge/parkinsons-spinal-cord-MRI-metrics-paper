@@ -92,130 +92,57 @@ Figure 4 presents the results of ANOVA comparing DTI, NODDI, MTR, and T2\*w metr
 :::{figure} #fig4cell
 :label: fig4
 
-A funny take on the difference between articles with code and articles from code.
-:::
+Table 1
 
-Let's see how directives work with a simple example by rendering a video from an external source:
+## 3.3 Correlation of metrics with UPDRSIII score
 
-:::{iframe} https://cdn.curvenote.com/0191bd75-1494-72f5-b48a-a0aaad296e4c/public/links-8237f1bb937ea247c2875ad14e560512.mp4
-:label: figvid
-:width: 100%
+To examine the impact of disease severity on our metrics, we employed an ordinary least-squares (OLS) regression model to explore the associations between DTI, NODDI, T2\*w, and MTR metrics and UPDRS-III scores, with age included as a covariate to account for its potential confounding effects. Prior to conducting the OLS regression analysis, we assessed the potential collinearity between age and UPDRSIII scores. The Variance Inflation Factor (VIF) found was 1.1, which is well below the commonly-used threshold of 10, indicating that collinearity is unlikely to affect our model. Furthermore, the Pearson coefficient between these two variables was 0.31 (p-value = 0.0099), suggesting that age and UPDRSIII are likely to be related, although the effect of one on the other is weak (r=0.31). 
 
-Video reused from [mystmd.org](https://mystmd.org) (CC-BY-4.0, [source](https://mystmd.org/guide)).
-:::ell
-:label: fig2
+Table 2 presents the p-values from the OLS model for the UPDRS-III and age variables, examining DTI, NODDI, and MTR metrics in relation to UPDRS-III score progression across each studied region. P-values in bold text marked with an asterisk (\*) indicate statistical significance after applying the Bonferroni correction for multiple comparisons, adjusting the significance threshold to 𝛼 = 0.05/N, where N represents the number of regions assessed in the spinal cord for each metric. Figures illustrating the results for each test can be found in the supplementary material. 
 
-An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository.  Check `content/figure_2.md` to see how this figure was generated and where the label `#fig2cell` is defined.
-:::
+According to table 1, some trends were observed in specific regions, for individual spinal levels for some of our metrics. Some p-values for the UPDRSIII score were below 𝛼 = 0.05, but none remained significant after correcting for N comparisons (𝛼 = 0.05/N). For instance, an increase in ODI, FICVF, and FISO was observed in relation to UPDRSIII across all studied spinal cord subregions, along with a decrease in FA, which was prominent at the C4 and C5 levels. The OLS regression model revealed an effect of the UPDRSIII on FA for the entire white matter at spinal levels C3 (p-UPDRSIII = 0.021) and C5 (p-UPDRSIII = 0.029), as well as in some sub-regions of the white matter (Figure 15). Effects of the UPDRSIII score were also observed on other metrics and regions such as RD at spinal level C2 (p-UPDRSIII = 0.043), FISO in the ventral funiculi at spinal level C2 (p-UPDRSIII = 0.013) and FICVF in the dorsal columns at spinal level C5 (p-UPDRSIII = 0.027). In the gray matter, the UPDRSIII revealed an effect on the FICVF at C5. Our findings also suggest an increase in the WM/GM ratio in T2*, particularly at the C4 spinal level. However, when correcting for multiple comparisons, no results were found significant for the UPDRSIII on any of the studied metrics and regions. 
 
-Both interactive, cool right! All your assets are centralized in this one document, which ideally lives in a GitHub repository. You may forget what you did, but your commit history will be there to remind you.
+Notably, the OLS model revealed a significant effect of age on MTR for the entire white matter (p-Age = 0.0017) and in the dorsal columns (p-Age = 0.0011) at spinal level C5, even when accounting for N comparisons. The UPDRSIII also demonstrated a significant correlation with the WM/GM ratio in T2\*w at C2, C4 and C5 (p-Age = 0.0005 at C2; p-Age = 0.004 at C4; p-Age = 0.0054 at C5) after correcting the significance threshold for multiple comparisons. 
 
-## NeuroLibre and MyST Markdown
+Table 2
 
-NeuroLibre is a reproducible preprint publisher that makes it a seamless experience to publish preprints written in MyST Markdown, and commits to the long term preservation of the content, runtime, data, and the functionality of the code.
+In order to compare the findings above with HC, the relationship between age and the metrics was also studied on our healthy subjects. The progression of metric values with age for PD subjects and HC is compared in the supplementary material. In these figures, we notice how the progression of values with age is similar between HC and PD subjects, across all metrics and regions. This lack of distinction makes it challenging to differentiate between the two groups based solely on age-related changes. However, the observed trends, such as an increase in ODI and a decrease in FA, align with findings from previous studies investigating age-related changes in these metrics in healthy individuals (Agosta et al., 2007; Mamata et al., 2005; Vedantam et al., 2013; Wang et al., 2014). 
 
-:::{seealso}
-You can refer to [this blogpost](https://conp.ca/about-neurolibre/#:~:text=NeuroLibre%20is%20a%20platform%20for,articles%2C%20tutorials%2C%20and%20reports) for more information about NeuroLibre.
-:::
+## 3.4 Cross-sectional area (CSA) of PD subjects versus healthy controls
 
-### Data
+Figure 5 presents the results of ANOVA comparing spinal cord cross-sectional area (CSA) across HC, low PD, med PD, and adv PD. The results revealed no significant differences in spinal cord cross-sectional area (CSA) between groups. Additionally, an OLS analysis revealed no significant effect of the UPDRSIII score on the CSA (Table 3), but rather a significant effect of age at C3 and C4 spinal levels (p-Age = 0.002). These results suggest that the cervical spinal cord CSA is not affected by PD. 
 
-Unless your preprint does not include any output that requires computational resources, you typically need to provide a set of inputs to supplement the generation of the assets in your article. The type and size of the data can vary greatly from one article to another, from a `50KB` excel spreadsheet to a `2GB` neuroimaging dataset of brain images.
+:::{figure} #fig5cell
+:label: fig5
 
-The only requirement is that the data must be publicly available to be accessed by NeuroLibre. To specify your data dependencies, you can provide a `binder/data_requirement.json` file in the root of your repository, with the following structure:
+Table 3
 
-```json
-{
-  { "src": "https://drive.google.com/uc?id=1hOohYO0ifFD-sKN_KPPXOgdQpNQaThiJ",
-  "dst": "../data",
-  "projectName": "neurolibre-demo-dataset"
-  }
-}
-```
+# 4. Discussion 
 
-:::{note}
-The above configuration specifies that the data will be downloaded from Google Drive and placed in and saved in a `data/neurolibre-demo-dataset` at the root of your repository. The `dst` field indicates `../data` as the root of the repository is one directory up from the `binder` directory where the `data_requirement.json` file is located.
+Following our ANOVA analysis, significant differences between HC and some PD groups have been identified. Post-hoc t-tests revealed a significant difference between HC and the advanced PD group for the WM/GM in T2\*w, as well as between HC and medium PD in the white matter for RD. Our results also suggest an increase in ODI, FISO and FICVF as well as a decrease in FA with an increasing UPDRSIII score, which may be attributed to the accumulation of α-synuclein, which can cause axonal swelling, leading to greater neurite orientation dispersion and reduced diffusion anisotropy. However, since the trends observed in relation to the UPDRSIII score were not significant for any of the studied metrics after correcting for multiple comparisons, conclusive interpretations cannot be made based on the current study.
 
-Even when the `dst` field is specified differently, NeuroLibre will always mount the data in the `data` folder at the root of your repository. We recommend you to follow the same convention while working locally and to remember to `.gitignore` the `data` folder!
-:::
+Although several post-mortem studies have reported a higher number of 𝛼-synuclein aggregates in the spinal cord of PD patients (Braak et al., 2007; Del Tredici & Braak, 2012), spinal cord 𝛼-synucleinopathy has also been linked to healthy spinal cord aging (Bloch et al., 2006; Buchman et al., 2017; Oinas et al., 2010; Sumikura et al., 2015). This makes the interpretation of our results difficult, since both aging and PD progression may have similar effects on the spinal cord microstructure. In our work, we have also observed an effect of age on the metrics, such as an increase in ODI and decrease in FA in the cervical spinal cord in both HC and PD subjects. These results are consistent with other work that have explored the effect of age on these DWI metrics in healthy subjects (Agosta et al., 2007). Agosta et al. (2007) have also reported no significant correlation between MD and age, which is also consistent with our findings. Other work with PD in the brain have also reported a negative correlation of FA with age in the substantia nigra (de Oliveira & Pereira, 2021). 
 
-:::{seealso}
-You can refer to [this documentation](https://docs.neurolibre.org/en/latest/STRUCTURE.html#the-binder-folder-data) for more information about the `binder/data_requirement.json` file and the available options to specify your data dependencies.
-:::
+Our current study revealed similar effects of age on our metrics as those observed with the UPDRSIII. In some regions and metrics, such as in the WM/GM in T2\*w, our analysis revealed a stronger effect of age than the UPDRSIII on our metrics. This makes it difficult to differentiate between the effects of Parkinson’s disease progression and normal aging. Additionally, while age was included in the analysis, other potential confounding variables that could impact the progression of the disease, such as medication, should be considered in future work. 
 
-#### How can I get NeuroLibre to cache my data dependencies? 
+Our results also show an increase in WM/GM in T2\*w with an increasing UPDRSIII in the cervical spinal cord, from C2 to C4, although not significant when correcting for multiple comparisons. Previous work have demonstrated relevance for the WM/GM in T2\*w as a potential biomarker for other neurodegenerative disorders in the spinal cord (Martin et al., 2017); however, to our knowledge, this study is the first to have explored its potential for PD in the spinal cord. Further research will be necessary to establish definitive conclusions regarding its applicability in PD. 
 
-You can use [this issue template](https://github.com/neurolibre/info/issues/new?assignees=agahkarakuzu&labels=DOWNLOAD&projects=&template=data_cache.md&title=) to request the caching of your data dependencies.
+Finally, in the current study, it was difficult to relate our findings for structural MRI in the spinal cord microstructure with those observed with functional MRI in the work of Landelle et al. (2023) using the same subjects. In their work, Landelle et al. (2023) found a decrease in functional connectivity that correlated with upper limb motor symptoms in between PD patients between C4 and C6 spinal levels. However, our analysis did not reveal any significant findings that could be associated with the functional changes described in their work. 
 
-### Code 
+Our analysis of spinal cord cross-sectional area (CSA) aligns with the findings of Combes et al. (2024), as we observed no structural changes due to PD. Indeed, our study revealed no significant differences in CSA between Parkinson’s disease (PD) subjects and healthy controls (HC). Additionally, no significant relationship between the UPDRSIII score and CSA was found. This absence of structural changes could explain the lack of significant correlations between PD and the examined MRI-derived metrics at the microstructural level. Furthermore, the evidence of no structural and microstructural changes within the gray matter may reinforce the findings of Landelle et al. (2023) observed through functional MRI, by suggesting that the effects of PD progression reported in their study were primarily driven by functional changes in the spinal cord rather than anatomical alterations. Nevertheless, subsequent work will be needed to confirm this. 
 
-NeuroLibre follows the [reproducible runtime environment specification (REES)](https://repo2docker.readthedocs.io/en/latest/specification.html) to define a runtime environment for your preprint. Any programming language supported by Project Jupyter (e.g. python, R, julia, etc.) can be used to create your executable content, where you place necessary [BinderHub configuration files](https://mybinder.readthedocs.io/en/latest/using/config_files.html#config-files) in the `binder` folder.
+# 5. Conclusion
 
-#### How much computational resources are available and for how long my notebooks can run to generate the outputs?
+In summary, this work is the first to have studied DTI, NODDI, MTR and T2\*w metrics in the cervical spinal cord of a population with PD. Although some significant differences were identified between HC and PD subjects in isolated regions of the spinal cord—notably for FA, RD and the T2\*w WM/GM — no significant changes in microstructural metrics were found in relation to the UPDRSIII score. Our results also suggest that age may have a greater effect on DTI, NODDI, MTR and T2\*w metrics than PD in some regions of the cervical spinal cord. Our lack of significant findings in this current study limits our ability to relate our results to the functional changes observed in the same subjects in Landelle et al. (2023). 
 
-For each preprint, we guarantee a minimum of 1 CPU core and 4 GB of RAM (8GB maximum), and a maximum of 1 hours of runtime to execute all the notebooks in the `content` folder.
+Nonetheless, this exploratory study provides insights into how the cervical spinal cord microstructure is affected by PD, and how it compares to normal aging processes in the spinal cord. The results are also in line with those of Combes et al. (2024), who did not find any structural changes between PD mice and non-transgenic mice. 
 
-> Do you really want someone to run your code for 1 hour? Probably not.
+# Supplementary material 
 
-Even though long-running code cells may be of interest to interactive tutorials, a reader who is interested in reproducing your Figure would be less likely to wait for more than a few minutes for the outputs to be generated. This is why we encourage you to create notebooks that can be run in the "attention span" of a reader.
+TODO : Add supplementary figures
 
-### Preview your preprint
+# Acknowledgements
 
-#### Locally
+This work is supported by the TransMedTech Institute, thanks to the financial support of the Canada First Research Excellence Fund and the Fonds de recherche du Québec, the Fondation Courtois, the Natural Sciences and Engineering Research Council of Canada (NSERC), and Polytechnique Montreal. We thank the Clinical, Biospecimen, Imaging & Genetic (C-BIG) repository for help in participant recruitment and the brain imaging centre of The Neuro for help in data acquisition. We thank all participants involved in this study.
 
-It is always a good practice to be able to build your MyST article locally before publishing it to NeuroLibre. If you install MyST as described [here](https://mystmd.org/guide/installing), in a virtual environment that has all your code dependencies installed, you can build your myst article:
 
-```bash
-cd path/to/your/repo
-myst build --execute --html
-```
-
-:::{note}
-NeuroLibre also supports Jupyter Book for publishing preprints. You can refer to [this documentation](https://jupyterbook.org/en/stable/intro.html) to find out more about it. However, as of late 2024, MyST is our recommended route for writing preprints.
-:::
-
-#### Roboneuro preview service
-
-If you have a data dependency and have NeuroLibre cached it for you, you can start using the Roboneuro preview service to build your preprint: https://robo.neurolibre.org
-
-#### Technical screening
-
-Once you submit your preprint to NeuroLibre, our team will perform a technical screening to ensure that your preprint can be built successfully. This is to make sure that your preprint is in line with our guidelines and to avoid any issues that may arise during the build process.
-
-You can visit our technical screening repository [neurolibre/neurolibre-reviews](https://github.com/neurolibre/neurolibre-reviews/issues) to see examples of this process.
-
-### After your preprint is published
-
-We archive all the reproducibility assets of your preprint on Zenodo and link those objects to your reproducible preprint that is assigned a DOI and indexed by [Crossref](https://www.crossref.org/) (also by Google Scholar, Researchgate, and other platforms that use Crossref metadata).
-
-Your preprint can be found, cited, and more importantly, reproduced by any interested reader, and that includes you (probably a few years after you published your preprint)!
-
-### Is the idea of wanting to publish a dashboard with your preprint too crazy?
-
-Absolutely not! We encourage you to publish your dashboard alongside your preprint to showcase your results in the best way possible.
-
-:::: {admonition} An interactive dashboard developed with R Shiny
-:class: tip
-:::{iframe} https://shinybrain.db.neurolibre.org
-:width: 100%
-:label: intdashboard
-:align: center
-
-MRShiny Brain interactive dashboard at [https://shinybrain.db.neurolibre.org](https://shinybrain.db.neurolibre.org)
-:::
-::::
-
-:::: {admonition} An award-winning dashboard developed using Plotly Dash
-:class: tip
-:::{iframe} https://rrsg2020.db.neurolibre.org/
-:width: 100%
-:label: intdashboard2
-:align: center
-
-ISMRM RRSG 2020 interactive dashboard at [https://rrsg2020.db.neurolibre.org/](https://rrsg2020.db.neurolibre.org/)
-:::
-::::
-
-These dashboards [](#intdashboard) and [](#intdashboard2) are embedded in their respective NeuroLibre preprints! If you are interested in publishing your own dashboard with NeuroLibre, please open an issue using [this template](https://github.com/neurolibre/info/issues/new?assignees=agahkarakuzu&labels=dashboard&projects=&template=new_dashboard.md&title=%5BNEW+DASHBOARD%5D).
-
-If you have any questions or need further assistance, please reach out to us at `info@neurolibre.org`.
