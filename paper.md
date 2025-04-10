@@ -58,8 +58,14 @@ Participants included both subjects with PD and healthy controls (HC). Individua
 :::{figure} #fig1cell
 :label: fig1
 
+(A) Acquisition parameters for T2*w, MTR and DWI; (B) Number of participants per category (controls, low_PD, med_PD and adv_PD) for each sequence according to their UPDRSIII score (C) Age and UPDRSIII distributions.
+:::
+
 :::{figure} #fig2cell
 :label: fig2
+
+Representative raw data of T2*w, MT0/MT1, and DWI from a single subject.
+:::
 
 ### 2.2 Data pre-processing and metric extraction
 
@@ -83,6 +89,9 @@ Figure 3 shows the average metric maps for DTI, NODDI and MTR, obtained by regis
 :::{figure} #fig3cell
 :label: fig3
 
+Average spinal cord maps for DTI, NODDI and MTR metrics for C2, C3, C4, and C5 spinal levels for healthy controls (HC), low PD, med PD, adv PD and all PD participants combined.
+:::
+
 According to the average metric maps in Figure 3, we notice an increase in ODI and a decrease in FA within the white matter among PD participants compared to their healthy counterparts. Additionally, a decrease in global intensity is observed as we progress through the more caudal spinal levels, which is particularly apparent in MTR and FA maps. 
 
 ## 3.2 Comparisons across groups (healthy controls, low PD, medium PD and advanced PD)
@@ -92,7 +101,14 @@ Figure 4 presents the results of ANOVA comparing DTI, NODDI, MTR, and T2\*w metr
 :::{figure} #fig4cell
 :label: fig4
 
-Table 1
+ANOVA for NODDI, DTI, T2*w and MTR for HC in comparison with PD subjects categorized by their UPDRSIII score (Low PD, Med PD and Adv PD), for spinal levels C2 to C5 combined.
+:::
+
+
+:::{figure} content/Table1.png
+
+Table 1. FDR-corrected p-values following post-hoc pairwise t-tests between HC – low PD, HC – medium PD and HC – advanced PD. The significant p-values (<0.05) are shown in red with an asterisk (*).
+:::
 
 ## 3.3 Correlation of metrics with UPDRSIII score
 
@@ -104,7 +120,10 @@ According to table 1, some trends were observed in specific regions, for individ
 
 Notably, the OLS model revealed a significant effect of age on MTR for the entire white matter (p-Age = 0.0017) and in the dorsal columns (p-Age = 0.0011) at spinal level C5, even when accounting for N comparisons. The UPDRSIII also demonstrated a significant correlation with the WM/GM ratio in T2\*w at C2, C4 and C5 (p-Age = 0.0005 at C2; p-Age = 0.004 at C4; p-Age = 0.0054 at C5) after correcting the significance threshold for multiple comparisons. 
 
-Table 2
+:::{figure} content/Table2.png
+
+Table 2. FDR-corrected p-values for UPDRSIII and age predictors for the OLS regression model (metric = UPDRSIII + Age) 
+:::
 
 In order to compare the findings above with HC, the relationship between age and the metrics was also studied on our healthy subjects. The progression of metric values with age for PD subjects and HC is compared in the supplementary material. In these figures, we notice how the progression of values with age is similar between HC and PD subjects, across all metrics and regions. This lack of distinction makes it challenging to differentiate between the two groups based solely on age-related changes. However, the observed trends, such as an increase in ODI and a decrease in FA, align with findings from previous studies investigating age-related changes in these metrics in healthy individuals (Agosta et al., 2007; Mamata et al., 2005; Vedantam et al., 2013; Wang et al., 2014). 
 
@@ -115,7 +134,10 @@ Figure 5 presents the results of ANOVA comparing spinal cord cross-sectional are
 :::{figure} #fig5cell
 :label: fig5
 
-Table 3
+:::{figure} content/Table3.png
+
+Table 3. P-values for UPDRSIII and Age variables for the cross-sectional area (CSA) following ordinary least squares (OLS) analysis. The significance level was corrected for each metric, by dividing 𝛼=0.05 by the number of spinal levels studied. 
+:::
 
 # 4. Discussion 
 
