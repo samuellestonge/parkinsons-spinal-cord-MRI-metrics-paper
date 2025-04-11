@@ -45,6 +45,7 @@ def ols_regression_analysis(metric, ols_formula, vert_levels, labels):
         data_WMGM = data_WM.copy() # Make a copy of data_WM to have the information from the other columns
         data_WMGM['Label'] = 'WM/GM' # Change the label name to 'WM/GM'
         data_WMGM['WA'] = data_WM['WA'].values / data_GM['WA'].values
+        data = pd.concat([data, data_WMGM], ignore_index=True) # Add the WM/GM ratio to the dataframe
     else:
         pass
 
@@ -110,7 +111,7 @@ def ols_regression_analysis(metric, ols_formula, vert_levels, labels):
 
 # Define lists of metrics, labels, and vertebral levels of interest for OLS analysis
 metrics = ['FA', 'MD', 'AD', 'RD', 'ODI', 'FISO', 'FICVF', 'MTR', 'T2star']
-labels_list = ['spinal cord', 'white matter', 'gray matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi']  
+labels_list = ['spinal cord', 'white matter', 'gray matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi', 'WM/GM']  
 vert_levels_list = ['2', '3', '4', '5']
 
 # Apply the method to each metric and combine the results in a common dataframe
