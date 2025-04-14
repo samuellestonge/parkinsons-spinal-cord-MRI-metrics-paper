@@ -104,8 +104,7 @@ Figure 4 presents the results of ANOVA comparing DTI, NODDI, MTR, and T2\*w metr
 ANOVA for NODDI, DTI, T2*w and MTR for HC in comparison with PD subjects categorized by their UPDRSIII score (Low PD, Med PD and Adv PD), for spinal levels C2 to C5 combined.
 :::
 
-
-:::{figure} content/Table1.png
+:::{figure} content/tables/table1.png
 
 Table 1. FDR-corrected p-values following post-hoc pairwise t-tests between HC – low PD, HC – medium PD and HC – advanced PD. The significant p-values (<0.05) are shown in red with an asterisk (*).
 :::
@@ -120,7 +119,7 @@ According to table 1, some trends were observed in specific regions, for individ
 
 Notably, the OLS model revealed a significant effect of age on MTR for the entire white matter (p-Age = 0.0017) and in the dorsal columns (p-Age = 0.0011) at spinal level C5, even when accounting for N comparisons. The UPDRSIII also demonstrated a significant correlation with the WM/GM ratio in T2\*w at C2, C4 and C5 (p-Age = 0.0005 at C2; p-Age = 0.004 at C4; p-Age = 0.0054 at C5) after correcting the significance threshold for multiple comparisons. 
 
-:::{figure} content/Table2.png
+:::{figure} content/tables/table2.png
 
 Table 2. FDR-corrected p-values for UPDRSIII and age predictors for the OLS regression model (metric = UPDRSIII + Age) 
 :::
@@ -134,7 +133,7 @@ Figure 5 presents the results of ANOVA comparing spinal cord cross-sectional are
 :::{figure} #fig5cell
 :label: fig5
 
-:::{figure} content/Table3.png
+:::{figure} content/tables/table3.png
 
 Table 3. P-values for UPDRSIII and Age variables for the cross-sectional area (CSA) following ordinary least squares (OLS) analysis. The significance level was corrected for each metric, by dividing 𝛼=0.05 by the number of spinal levels studied. 
 :::
@@ -161,10 +160,24 @@ Nonetheless, this exploratory study provides insights into how the cervical spin
 
 # Supplementary material 
 
-TODO : Add supplementary figures
+:::{figure} #suppl-fig1cell
+:label: suppl-fig1
+
+Correlations of DTI, NODDI, MTR and T2*w with the UPDRSIII score
+:::
+
+:::{figure} #suppl-fig2cell
+:label: suppl-fig2
+
+Correlations of DTI, NODDI, MTR and T2*w with age
+:::
+
+:::{figure} #suppl-fig3cell
+:label: suppl-fig3
+
+Correlations of CSA with (A) the UPDRSIII score and (B) with age
+:::
 
 # Acknowledgements
 
 This work is supported by the TransMedTech Institute, thanks to the financial support of the Canada First Research Excellence Fund and the Fonds de recherche du Québec, the Fondation Courtois, the Natural Sciences and Engineering Research Council of Canada (NSERC), and Polytechnique Montreal. We thank the Clinical, Biospecimen, Imaging & Genetic (C-BIG) repository for help in participant recruitment and the brain imaging centre of The Neuro for help in data acquisition. We thank all participants involved in this study.
-
-
