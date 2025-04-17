@@ -6,7 +6,7 @@ from statsmodels.stats.multitest import multipletests
 # Post-Hoc Analysis
 
 This scripts performs post-hoc analyses on the data obtained from figure_4.ipynb. 
-It includes pairwise t-tests between CTRL-low PD, CTRL-med PD, and CTRL-adv PD groups.
+It includes pairwise t-tests between CTRL-early PD, CTRL-mid PD, and CTRL-adv PD groups.
 The p-values are then corrected for multiple comparisons using the Benjamini-Hochberg procedure, also known as the False Discovery Rate (FDR) correction.
 
 The script was run for the following metrics and labels, which had significant differences between groups in the OLS regression analysis:
@@ -57,30 +57,27 @@ def post_hoc_analysis(metric, label, vert_level):
     data = data[data['Label'] == label]
     
     CTRL_data = data[data['UPDRS_class_bis'] == 'CTRL']['WA']
-    lowPD_data = data[data['UPDRS_class_bis'] == 'low']['WA']
-    medPD_data = data[data['UPDRS_class_bis'] == 'med']['WA']
+    earlyPD_data = data[data['UPDRS_class_bis'] == 'early']['WA']
+    midPD_data = data[data['UPDRS_class_bis'] == 'mid']['WA']
     advPD_data = data[data['UPDRS_class_bis'] == 'adv']['WA']
 
     # Perform pairwise t-tests between CTRL and PD groups
-    pval_ctrl_low = stats.ttest_ind(CTRL_data, lowPD_data, equal_var=False)[1]
-    pval_ctrl_med = stats.ttest_ind(CTRL_data, medPD_data, equal_var=False)[1]
+    pval_ctrl_early = stats.ttest_ind(CTRL_data, earlyPD_data, equal_var=False)[1]
+    pval_ctrl_mid = stats.ttest_ind(CTRL_data, midPD_data, equal_var=False)[1]
     pval_ctrl_adv = stats.ttest_ind(CTRL_data, advPD_data, equal_var=False)[1]
 
     # Collect the raw p-values in a list
-    raw_pvals = [pval_ctrl_low, pval_ctrl_med, pval_ctrl_adv]
+    raw_pvals = [pval_ctrl_early, pval_ctrl_mid, pval_ctrl_adv]
 
     # Apply FDR correction using the Benjamini-Hochberg method
     _, pvals_adj, _, _ = multipletests(raw_pvals, method='fdr_bh')
 
     # Print the original and adjusted p-values for each comparison
     print(f"\n------------ Post-hoc t-tests results with original p-values and FDR-corrected p-values for {metric} in {label} : ------------ \n")
-    print(f"CTRL vs low: Raw p-value = {pval_ctrl_low:.4f}, Adjusted p-value (FDR) = {pvals_adj[0]:.4f}")
-    print(f"CTRL vs med: Raw p-value = {pval_ctrl_med:.4f}, Adjusted p-value (FDR) = {pvals_adj[1]:.4f}")
-    print(f"CTRL vs adv: Raw p-value = {pval_ctrl_adv:.4f}, Adjusted p-value (FDR) = {pvals_adj[2]:.4f}")
+    print(f"CTRL vs early PD: Raw p-value = {pval_ctrl_early:.4f}, Adjusted p-value (FDR) = {pvals_adj[0]:.4f}")
+    print(f"CTRL vs mid PD: Raw p-value = {pval_ctrl_mid:.4f}, Adjusted p-value (FDR) = {pvals_adj[1]:.4f}")
+    print(f"CTRL vs adv PD: Raw p-value = {pval_ctrl_adv:.4f}, Adjusted p-value (FDR) = {pvals_adj[2]:.4f}")
 
 # Run the function for each combination of metric and label which had significant differences in the OLS regression analysis (see figure_4.ipynb)
 post_hoc_analysis('FA', 'white matter', '2:05')
 post_hoc_analysis('RD', 'white matter', '2:05')
-post_hoc_analysis('T2star', 'WM/GM', '2:05')
-
-

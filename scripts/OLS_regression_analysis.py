@@ -38,7 +38,7 @@ def ols_regression_analysis(metric, ols_formula, vert_levels, labels):
     # Get data for the specified metric 
     data = pd.read_csv(f'data/parkinsons-spinalcord-mri-metrics/data/{metric}.csv')
 
-    if 'white matter' in labels and 'gray matter' in labels:
+    if "WM/GM" in labels: 
         # Compute and add the WM/GM ratio to the dataframe
         data_WM = data[data['Label'] == 'white matter']
         data_GM = data[data['Label'] == 'gray matter']
@@ -53,7 +53,7 @@ def ols_regression_analysis(metric, ols_formula, vert_levels, labels):
     p_values_list = []
 
     # Convert vertebral levels to strings
-    data['VertLevel'] = data['VertLevel'].astype(str)
+    #data['VertLevel'] = data['VertLevel'].astype(str)
 
     # Loop through vertebral levels and labels to extract p-values from your model
     for vert_level in vert_levels:
@@ -63,6 +63,8 @@ def ols_regression_analysis(metric, ols_formula, vert_levels, labels):
             data_for_analysis = data[(data['Label'] == label) & (data['VertLevel'] == vert_level) & (data['CTRL_or_PD'] == 'PD')]
             ols_model = smf.ols(formula=ols_formula, data=data_for_analysis)
             ols_results = ols_model.fit()
+
+            print(data_for_analysis)
             
             # Extract p-values for UPDRSIII and Age from the model
             pvalue_UPDRSIII = ols_results.pvalues.loc['UPDRSIII_total']
@@ -85,44 +87,61 @@ def ols_regression_analysis(metric, ols_formula, vert_levels, labels):
                 'p-value_type': 'Age'
             })
 
-            # Convert the list to a DataFrame
-            p_values_df = pd.DataFrame(p_values_list)
+    # Convert the list to a DataFrame
+    p_values_df = pd.DataFrame(p_values_list)
 
-            # Separate the p-values for UPDRSIII and Age, ensuring we don't work on views
-            p_values_UPDRSIII = p_values_df[p_values_df['p-value_type'] == 'UPDRSIII'].copy()
-            p_values_age = p_values_df[p_values_df['p-value_type'] == 'Age'].copy()
+    # Separate the p-values for UPDRSIII and Age
+    p_values_UPDRSIII = p_values_df[p_values_df['p-value_type'] == 'UPDRSIII'].copy()
+    p_values_age = p_values_df[p_values_df['p-value_type'] == 'Age'].copy()
 
-            # Apply FDR correction to UPDRSIII p-values
-            p_values_UPDRSIII['p-values_FDR_corrected'] = multipletests(p_values_UPDRSIII['p-values'], method='fdr_bh')[1]
+    # Apply FDR correction to UPDRSIII p-values
+    p_values_UPDRSIII['p-values_FDR_corrected'] = multipletests(p_values_UPDRSIII['p-values'], method='fdr_bh')[1]
 
-            # Apply FDR correction to Age p-values
-            p_values_age['p-values_FDR_corrected'] = multipletests(p_values_age['p-values'], method='fdr_bh')[1]
+    # Apply FDR correction to Age p-values
+    p_values_age['p-values_FDR_corrected'] = multipletests(p_values_age['p-values'], method='fdr_bh')[1]
 
-            # Combine the corrected p-values back into the original DataFrame
-            p_values_df = pd.concat([p_values_UPDRSIII, p_values_age])
+    # Combine the corrected p-values back into the original DataFrame
+    p_values_df = pd.concat([p_values_UPDRSIII, p_values_age])
 
-            # Convert the 'Label' column to a categorical type to specify the desired order
-            p_values_df['Label'] = pd.Categorical(p_values_df['Label'], categories=labels, ordered=True)
+    # Convert the 'Label' column to a categorical type to specify the desired order
+    p_values_df['Label'] = pd.Categorical(p_values_df['Label'], categories=labels, ordered=True)
 
-            # Sort the DataFrame based on the custom order of the 'Label' column
-            p_values_df_sorted = p_values_df.sort_values(by=['Label', 'VertLevel'], ascending=[True, True])
+    # Sort the DataFrame based on the custom order of the 'Label' column
+    p_values_df_sorted = p_values_df.sort_values(by=['Label', 'VertLevel'], ascending=[True, True])
+
+    print(f'p_values_df_sorted for {metric}:\n', p_values_df_sorted)
 
     return p_values_df_sorted
 
 # Define lists of metrics, labels, and vertebral levels of interest for OLS analysis
-metrics = ['FA', 'MD', 'AD', 'RD', 'ODI', 'FISO', 'FICVF', 'MTR', 'T2star']
-labels_list = ['spinal cord', 'white matter', 'gray matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi', 'WM/GM']  
+DTI_metrics = ['FA', 'MD', 'RD', 'AD']
+NODDI_metrics = ['FICVF', 'FISO', 'ODI']
 vert_levels_list = ['2', '3', '4', '5']
+WA_formula = 'WA ~ UPDRSIII_total + Age'
+CSA_formula = 'CSA ~ UPDRSIII_total + Age'
 
-# Apply the method to each metric and combine the results in a common dataframe
-formula = 'WA ~ UPDRSIII_total + Age'
-for metric in metrics:
-    p_values = ols_regression_analysis(metric, ols_formula = formula, vert_levels = vert_levels_list, labels = labels_list)
+# Apply the method to each metric and combine the results in a common dataframe (results_table)
+
+# For NODDI metrics
+for metric in NODDI_metrics:
+    p_values = ols_regression_analysis(metric, ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['spinal cord', 'white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi', 'gray matter'])
     results_table = pd.concat([results_table, p_values], ignore_index=True)
 
-# Apply the method to spinal cord CSA
-formula_CSA = 'CSA ~ UPDRSIII_total + Age'
-p_values_CSA = ols_regression_analysis('CSA', ols_formula=formula_CSA, vert_levels = vert_levels_list, labels = ['spinal cord'])
+# # For DTI metrics
+for metric in DTI_metrics:
+    p_values = ols_regression_analysis(metric, ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['spinal cord', 'white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi'])
+    results_table = pd.concat([results_table, p_values], ignore_index=True)
+
+# For MTR 
+p_values = ols_regression_analysis('MTR', ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['spinal cord', 'white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi'])
+results_table = pd.concat([results_table, p_values], ignore_index=True)
+
+# # For T2star
+p_values = ols_regression_analysis('T2star', ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['WM/GM'])
+results_table = pd.concat([results_table, p_values], ignore_index=True)
+
+# # Apply the method to spinal cord CSA
+p_values_CSA = ols_regression_analysis('CSA', ols_formula=CSA_formula, vert_levels = vert_levels_list, labels = ['spinal cord'])
 results_table = pd.concat([results_table, p_values_CSA], ignore_index=True)
 
 # Save the results to a CSV 
