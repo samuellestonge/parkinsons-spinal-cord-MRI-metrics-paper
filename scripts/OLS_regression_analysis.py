@@ -124,16 +124,16 @@ CSA_formula = 'CSA ~ UPDRSIII_total + Age'
 
 # For NODDI metrics
 for metric in NODDI_metrics:
-    p_values = ols_regression_analysis(metric, ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['spinal cord', 'white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi', 'gray matter'])
+    p_values = ols_regression_analysis(metric, ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi', 'gray matter'])
     results_table = pd.concat([results_table, p_values], ignore_index=True)
 
 # # For DTI metrics
 for metric in DTI_metrics:
-    p_values = ols_regression_analysis(metric, ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['spinal cord', 'white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi'])
+    p_values = ols_regression_analysis(metric, ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi'])
     results_table = pd.concat([results_table, p_values], ignore_index=True)
 
 # For MTR 
-p_values = ols_regression_analysis('MTR', ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['spinal cord', 'white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi'])
+p_values = ols_regression_analysis('MTR', ols_formula = WA_formula, vert_levels = vert_levels_list, labels = ['white matter', 'dorsal columns', 'ventral funiculi', 'lateral funiculi'])
 results_table = pd.concat([results_table, p_values], ignore_index=True)
 
 # # For T2star
