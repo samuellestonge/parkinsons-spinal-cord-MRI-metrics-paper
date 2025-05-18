@@ -1,60 +1,94 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  title: 'Demystifying MyST: The most powerful preprint authoring tool'
-  subtitle: A template for reproducible preprints
+  title: "Parkinson’s disease in the spinal cord: an exploratory study to establish T2*w, MTR and diffusion-weighted imaging metric values"
   thebe:
     binder:
-      url: https://binder-preview.conp.cloud # NeuroLibre binder URL, production will override this.
-      repo: neurolibre/mystical-article # Production will override this.
+      url: https://terrarium.evidencepub.io # NeuroLibre binder URL, production will override this.
+      repo: samuellestonge/parkinsons-spinal-cord-MRI-metrics-paper # Production will override this.
       ref: HEAD # Production will override this.
   authors:
-    - name: Agah Karakuzu
-      orcid: 0000-0001-7283-271X
-      affiliations: polymtl; mhi
+    - name: Samuelle St-Onge
+      orcid: 0000-0001-7572-8504
+      affiliations: neuropoly; ste-justine
       corresponding: true
-      email: agah.karakuzu@polymtl.ca
-      twitter: agahkarakuzu
-      equal_contributor: true
-      url: https://agah.dev
-      github: agahkarakuzu
-      roles:
-        - Conceptualization
-        - Software
-        - Writing – original draft
-    - name: Robo Neuro
-      affiliations: polymtl
-      equal_contributor: true
-      github: roboneurolibre
-      note: Roboneuro is a friendly publishing bot who fails the Turing test.
-      roles:
-        - Project administration
-        - Writing – review & editing
+      email: samuelle.st-onge@polymtl.ca
+      github: samuellestonge
+    - name: Camille Coustaury
+      affiliations: neuropoly
+    - name: Caroline Landelle
+      orcid: 0000-0001-5245-2824
+      affiliations: mcgill
+    - name: Linda Solstrand Dahlberg
+      orcid: 0000-0002-1090-7138
+      affiliations: mcgill
+    - name: Ovidiu Lungu
+      orcid: 0000-0001-6608-5818
+      affiliations: udem
+    - name: Julien Doyon
+      affiliations: mcgill
+    - name: Benjamin De Leener
+      orcid: 0000-0002-1378-2756
+      affiliations: neuropoly, polymtl, ste-justine
+
   affiliations:
-    - id: polymtl
+    - id: neuropoly
       institution: NeuroPoly Lab, Polytechnique Montreal
       ror: https://ror.org/05f8d4e86
       isni: 0000 0004 0435 3292
-      department: Electrical Engineering
+      department: Institute of Biomedical Engineering
       address: 2500 Chem. de Polytechnique
       city: Montreal
       region: Quebec
       country: Canada
       postal_code: H3T 1J4
       phone: 1 (514) 340-4711
-    - id: mhi
-      institution: Montreal Heart Institute
-      ror: https://ror.org/03vs03g62
-      isni: 0000 0000 8995 9090
-      address: 5000 Rue Belanger
+    - id: polymtl
+      institution: Polytechnique Montreal
+      ror: https://ror.org/05f8d4e86
+      isni: 0000 0004 0435 3292
+      department: Institute of Electrical Engineering
+      address: 2500 Chem. de Polytechnique
       city: Montreal
       region: Quebec
       country: Canada
-      postal_code: H1T 1C8
+      postal_code: H3T 1J4
+      phone: 1 (514) 340-4711
+    - id: ste-justine
+      institution: Sainte-Justine Hospital Research Centre 
+      ror: https://ror.org/01gv74p78
+      isni: 0000 0001 2173 6322
+      address: 3175 Chem. de la Côte-Sainte-Catherine
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H3T 1C5
+    - id: mcgill
+      institution: McConnell Brain Imaging Centre, McGill University
+      ror: https://ror.org/05ghs6f64
+      isni: 0000 0004 0646 3639
+      address: 3801 University Street
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H3A 2B4
+    - id: udem
+      institution: Département de psychiatrie et addictologie, Université de Montréal
+      ror: https://ror.org/0161xgx34
+      isni: 0000 0001 2104 2136
+      address: 2900 Edouard Montpetit
+      city: Montreal
+      region: Quebec
+      country: Canada
+      postal_code: H3T 1J4
+
   keywords:
-    - reproducible publishing
-    - mystmd
-    - next-gen preprints
+    - Parkinson's disease
+    - spinal cord
+    - diffusion MRI 
+    - magnetization transfer ratio
+    - T2*-weighted imaging
+
   github: https://github.com/neurolibre/mystical-article
   banner: static/banner.jpg
   venue: Neurolibre #Production will override this.
@@ -71,14 +105,21 @@ project:
   bibliography:
     - paper.bib
   resources:
-    - content/figure1.ipynb
-    - content/figure2.md
+    - content/main_figures/figure_1.ipynb
+    - content/main_figures/figure_2.ipynb
+    - content/main_figures/figure_3.ipynb
+    - content/main_figures/figure_4.ipynb
+    - content/main_figures/figure_5.ipynb
+    - content/supplementary_figures/suppl_figure_1.ipynb
+    - content/supplementary_figures/suppl_figure_2.ipynb
+    - content/supplementary_figures/suppl_figure_3.ipynb
+
 site:
   template: article-theme # Or book-theme
-  options:
-    favicon: static/favicon.ico # Production will override this for branding.
-    logo: static/logo.png # Production will override this for branding.
-    twitter: neurolibre
+  # options:
+  #   favicon: static/favicon.ico # Production will override this for branding.
+  #   logo: static/logo.png # Production will override this for branding.
+  #   twitter: neurolibre
 
 # This section is under development
 neurolibre:
