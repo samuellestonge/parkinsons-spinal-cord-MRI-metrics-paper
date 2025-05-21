@@ -7,8 +7,8 @@ tags:
   - MRI
 authors:
   - name: Samuelle St-Onge
-    orcid: 
-    affiliation: "1, 2"
+    orcid: 0000-0001-7572-8504
+    affiliation: "1,2"
   - name: Camille Coustaury
     orcid: null
     affiliation: "1"
@@ -16,16 +16,16 @@ authors:
     orcid:  
     affiliation: "3"
   - name: Linda Solstrand Dahlberg
-    orcid: 
+    orcid: 0000-0002-1090-7138
     affiliation: "3"
   - name: Ovidiu Lungu
-    orcid: 
+    orcid: 0000-0001-6608-5818
     affiliation: "3,4"
   - name: Julien Doyon
-    orcid:
+    orcid: null
     affiliation: "3"
   - name: Benjamin De Leener
-    orcid: null
+    orcid: 0000-0002-1378-2756
     affiliation: "1,2,5"
 
 affiliations:
