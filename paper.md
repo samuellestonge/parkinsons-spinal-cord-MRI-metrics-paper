@@ -1,37 +1,54 @@
 ---
-numbering:
-  heading_2: false
-  figure:
-    template: Fig. %s
+title: 'Parkinson’s disease in the spinal cord: an exploratory study to establish T2*w, MTR and diffusion-weighted imaging metric values'
+tags:
+  - Preprint
+  - Spinal Cord
+  - Parkinson's disease
+  - MRI
+authors:
+  - name: Samuelle St-Onge
+    orcid: 
+    affiliation: "1, 2"
+  - name: Camille Coustaury
+    orcid: null
+    affiliation: "1"
+  - name: Caroline Landelle 
+    orcid:  
+    affiliation: "3"
+  - name: Linda Solstrand Dahlberg
+    orcid: 
+    affiliation: "3"
+  - name: Ovidiu Lungu
+    orcid: 
+    affiliation: "3,4"
+  - name: Julien Doyon
+    orcid:
+    affiliation: "3"
+  - name: Benjamin De Leener
+    orcid: null
+    affiliation: "1,2,5"
+
+affiliations:
+- name: NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montréal, Montreal, QC, Canada.
+  index: 1
+- name: CHU Sainte-Justine Research Centre, Montreal, QC, Canada.
+  index: 2
+- name: McConnell Brain Imaging Centre, Department of Neurology and Neurosurgery, Montreal Neurological Institute, McGill University, Montreal, QC, Canada.
+  index: 3
+- name: Département de psychiatrie et addictologie, Université de Montréal, Montreal, QC, Canada.
+  index: 4
+- name: Computer Engineering and Software Engineering, Polytechnique Montréal, Montreal, QC, Canada.
+  index: 5
+
+bibliography: paper.bib
+date: "21 May 2025"
 ---
 
-<p>
-<center>
-<b>
-<h3>
-Parkinson’s disease in the spinal cord: an exploratory study to establish T2*w, MTR and diffusion-weighted imaging metric values
-</h3>
+# Abstract
 
-<p style="text-align:center;">
-Samuelle St-Onge<sup>1,2</sup>, Camille Coustaury<sup>1</sup>, Caroline Landelle<sup>3</sup>, Linda Solstrand Dahlberg<sup>3</sup>, Ovidiu Lungu<sup>3,4</sup>, Julien Doyon<sup>3</sup>, Benjamin De Leener<sup>1,2,5</sup>
-</p>
-</b>
+Parkinson's disease (PD) is primarily defined by brain pathology, including dopamine neuron degeneration and 𝛼-synuclein aggregation. Emerging evidence suggests that the spinal cord is also affected, with ex-vivo studies reporting abnormal 𝛼-synuclein protein aggregation within the spinal cord of PD patients. While advanced imaging techniques, such as diffusion tensor imaging (DTI), neurite orientation dispersion and density imaging (NODDI), T2*-weighted (T2*w) imaging, and the magnetization transfer ratio (MTR) have demonstrated potential for detecting PD-related changes in the brain, their application to uncover spinal cord alterations remains unexplored. This study is the first to investigate MRI-derived microstructural metrics in the spinal cord of PD patients, comparing them to healthy controls. Although this study found limited microstructural or structural differences in the spinal cord between PD patients and healthy controls, these findings are consistent with recent results from PD mouse models and complement an earlier functional MRI study using the same cohort, where significant findings were observed. Our lack of significant structural findings may suggest that functional spinal cord changes are more sensitive markers of Parkinson’s disease progression — particularly in relation to clinical measures such as the Unified Parkinson’s Disease Rating Scale (UPDRS). These results highlight the need for further research to better understand how PD-related alterations in the spinal cord compare to normal aging processes and relate to functional changes.
 
-<ul style="list-style-type: none">
-<li><sup>1</sup>NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montréal, Montreal, QC, Canada</li>
-<li><sup>2</sup>CHU Sainte-Justine Research Centre, Montreal, QC, Canada</li>
-<li><sup>3</sup>McConnell Brain Imaging Centre, Department of Neurology and Neurosurgery, Montreal Neurological Institute, McGill University, Montreal, QC, Canada</li>
-<li><sup>4</sup>Département de psychiatrie et addictologie, Université de Montréal, Montreal, QC, Canada</li>
-<li><sup>5</sup>Computer Engineering and Software Engineering, Polytechnique Montréal, Montreal, QC, Canada</li>
-</ul>
-</center>
-</p>
-
-## Abstract
-
-*Parkinson's disease (PD) is primarily defined by brain pathology, including dopamine neuron degeneration and 𝛼-synuclein aggregation. Emerging evidence suggests that the spinal cord is also affected, with ex-vivo studies reporting abnormal 𝛼-synuclein protein aggregation within the spinal cord of PD patients. While advanced imaging techniques, such as diffusion tensor imaging (DTI), neurite orientation dispersion and density imaging (NODDI), T2*-weighted (T2*w) imaging, and the magnetization transfer ratio (MTR) have demonstrated potential for detecting PD-related changes in the brain, their application to uncover spinal cord alterations remains unexplored. This study is the first to investigate MRI-derived microstructural metrics in the spinal cord of PD patients, comparing them to healthy controls. Although this study found limited microstructural or structural differences in the spinal cord between PD patients and healthy controls, these findings are consistent with recent results from PD mouse models and complement an earlier functional MRI study using the same cohort, where significant findings were observed. Our lack of significant structural findings may suggest that functional spinal cord changes are more sensitive markers of Parkinson’s disease progression — particularly in relation to clinical measures such as the Unified Parkinson’s Disease Rating Scale (UPDRS). These results highlight the need for further research to better understand how PD-related alterations in the spinal cord compare to normal aging processes and relate to functional changes.*
-
-## 1. Introduction
+# Introduction
 
 Parkinson's disease (PD) is a neurodegenerative disease that is defined by both the degeneration of dopamine-producing neurons inside the substantia nigra (@nyatega_gray_2022) and the abnormal accumulation of 𝛼-synuclein inside neurons, forming abnormal protein aggregates commonly referred to as Lewy bodies (@bianco_-synucleinopathy_2002; @muller_staging_2005). While PD has traditionally been linked to brain pathology, markers of the disease have been identified in the spinal cord, notably the presence of abnormal aggregation of 𝛼-synuclein proteins inside spinal cord axons (@nardone_spinal_2020). 
 
@@ -47,9 +64,9 @@ Others have explored T2\*-weighted (T2\*w), or its reciprocal R2* (1/T2\*), as a
 
 The present study thus seeks to address all the above-mentioned knowledge gaps by assessing  the potential of quantitative MRI to detect microstructural changes in the spinal cord related to Parkinson’s disease. We aim to establish relationships between PD progression and T2\*w, MTR, DTI and NODDI values in the cervical spinal cord. Disease progression was assessed using the motor component of the Unified Parkinson’s Disease Rating Scale (UPDRS) (Movement Disorder Society Task Force on Rating Scales for Parkinson’s Disease, 2003) to correlate these metrics with motor symptom severity. Additionally, PD stage was explored by categorizing participants into early, mid and advanced groups based on their UPDRSIII motor scores. The study also seeks to evaluate whether DTI, NODDI, T2\*w and MTR metrics can be used to differentiate PD patients from their healthy counterparts, which could lead to identifying potential biomarkers for PD in the spinal cord. 
 
-## 2. Methods
+# Methods
 
-### 2.1 Data acquisition
+## Data acquisition
 
 The study involved the same participants as in @landelle_altered_2023, who have been scanned at the Montreal Neurological Institute-Hospital using a 3 Tesla MRI scanner (Magnetom Prisma, Siemens, Erlangen, Germany). All participants gave their written consent in accordance with the Helsinki Declaration, and the experiment was approved by the local ethics committee (MUCH REB 2019-4626). The acquisition protocol included a T1w, T2\*w, magnetization transfer (MT) and a multi-shell diffusion MRI sequence. The detailed acquisition parameters for T2\*w, MTR and DWI are presented in Figure 1. Figure 2 shows examples of raw data acquisitions for a single subject. Because of the limited field-of-view of the acquisitions, only the cervical spinal cord from spinal levels C2 to C5 was considered for this study. 
 
@@ -67,7 +84,7 @@ Participants (N=106; 65 M, 41 F) included both patients with PD (N=68; 47 M, 21 
 Representative raw data of T2\*w, MT0/MT1, and DWI from a single subject.
 :::
 
-### 2.2 Data pre-processing and metric extraction
+## Data pre-processing and metric extraction
 
 FA, MD, RD and AD metrics were computed from the DWI images using DTI from DIPY via the Spinal Cord Toolbox (SCT) (@de_leener_sct_2017). ODI, FISO and FICVF metrics were computed using the NODDI Matlab Toolbox (@ucl_microstructure_imaging_group_noddi_2021). The motion correction algorithm from SCT was attempted on the DWI images but did not improve image quality and occasionally introduced noise; therefore, uncorrected data were used in subsequent analyses. Using SCT, magnetization transfer (MT) images with and without the MT pulse were co-registered, and magnetization transfer ratio (MTR) maps were computed from the co-registered data. The individual MTR, T2\*w and DWI images underwent initial preprocessing with SCT, which first included spinal cord segmentation using the sct_propseg algorithm and manual corrections when necessary. Because of the thick slices of T2\*w (2 mm), MTR and DWI (5 mm) acquisitions, it was difficult to label the vertebrae on these images directly. For this reason, vertebral labeling was performed on T1w acquisitions (slice thickness = 1.3 mm) and were coregistered to the PAM50 template (@de_leener_pam50_2018). Then, the generated warping fields were used to initialize the coregistration of T2\*w, MTR, DTI and NODDI images to the PAM50 template. Thus we generated average group-level metric maps (i.e., average pixel wise intensity) for both HC and PD subjects, at spinal levels C2 to C5 in the PAM50 space. 
 
@@ -75,15 +92,15 @@ Using the atlas from the co-registered PAM50 template, we extracted DTI metrics 
 
 Importantly, all metrics were extracted using the spinal levels (@frostell_review_2016, SCT v6.1) instead of the vertebral levels to offer a representation that reflects more accurately the functional organization of the spinal cord into different rootlets, thereby enabling more robust comparisons with the findings of @landelle_altered_2023 in functional MRI. The cross-sectional area of the spinal cord was also computed on all individual T2\*w images via sct_process_segmentation from SCT. 
 
-### 2.3 Effect of groups and UPDRSIII score on MRI metrics
+## Effect of groups and UPDRSIII score on MRI metrics
 
 We investigated the relationships between PD and MRI-derived metrics (DTI, NODDI, T2\*w ratio, and MTR) in the cervical spinal cord by examining how the metrics varied across different groups (controls, early PD, mid PD, and advanced PD). To this end, we performed an analysis of variance (ANOVA) on the mean metric value extracted across spinal levels C2–C5. Age was included as a covariate to control for its potential confounding effects. Post-hoc t-tests were performed on metrics that showed significant results (p < 0.05) to further explore group differences. 
 
 To explore the relationship between disease progression and microstructural changes detectable through our metrics, we employed an ordinary least-squares (OLS) regression model to assess the correlations between DTI, NODDI, T2\*w, and MTR metrics with UPDRSIII scores, while controlling for age as a potential confounder. For each metric, the OLS analysis was performed for spinal levels C2 to C5 separately. DTI, NODDI and MTR metrics were studied in the white matter and its subregions (dorsal columns, ventral funiculi, lateral funiculi) to identify potential changes which may be attributed to the accumulation of α-synuclein inside white matter axons. Due to its ability to identify changes in gray matter dendrites, NODDI was also calculated in the gray matter, to investigate whether differences in these metrics could be identified with an increasing UPDRSIII score. Finally, the white matter to gray matter ratio (WM/GM) was studied using T2\*w images. To control for the risk of type I errors due to multiple comparisons, the p-values were adjusted using the Benjamini-Hochberg method, also known as the false-discovery rate (FDR) correction. Cross-sectional area (CSA) was also examined using the above-mentioned ANOVA and OLS models to detect potential structural changes in the cervical spinal cord associated with PD. 
 
-## 3. Results
+# Results
 
-### 3.1 Average metric maps
+## Average metric maps
 
 Figure 3 shows the average metric maps for DTI, NODDI and MTR, obtained by registering the metrics to the PAM50 template and computing the pixel-by-pixel average intensity for each subject category (HC, early PD, mid PD and advanced PD).  
 
@@ -95,7 +112,7 @@ Average spinal cord maps for DTI, NODDI and MTR metrics for C2, C3, C4, and C5 s
 
 The average metric maps in Figure 3 revealed an increase in ODI and a decrease in FA within the white matter among PD participants compared to their healthy counterparts. Additionally, a decrease in global intensity is observed as we progress through the more caudal spinal levels, which is particularly apparent in MTR and FA maps. 
 
-## 3.2 Cross-sectional area (CSA) of PD subjects versus healthy controls 
+## Cross-sectional area (CSA) of PD subjects versus healthy controls 
 
 Figure 4 presents the results of ANOVA comparing spinal cord cross-sectional area (CSA) across HC, early PD, mid PD, and advanced PD groups. The results revealed no significant differences in spinal cord cross-sectional area (CSA) between groups. Additionally, an OLS analysis revealed no significant correlation between the UPDRSIII score and the CSA (Table 3), but rather a significant correlation of age and CSA at C3 and C4 spinal levels (p-Age = 0.002). These results suggest that the cervical spinal cord CSA is not affected by PD. 
 
@@ -110,7 +127,7 @@ Fig 4.  ANOVA for the spinal cord cross-sectional area (CSA) for HC in compariso
 Table 1. P-values for UPDRSIII and Age variables for the cross-sectional area (CSA) following ordinary least squares (OLS) analysis. The significance level was corrected for each metric, by dividing 𝛼=0.05 by the number of spinal levels studied. 
 :::
 
-## 3.3 Comparisons across groups (healthy controls, early PD, mid PD and advanced PD)
+## Comparisons across groups (healthy controls, early PD, mid PD and advanced PD)
 
 Figure 5 presents the results of an ANOVA comparing DTI, NODDI, MTR, and T2\*w metrics across the different groups (HC, early PD, mid PD, and advanced PD). In the white matter, our results showed a significant effect of group on FA and RD metrics, for the combined spinal levels C2 to C5 (FA : p-Group = 0.0180; RD : p-Group = 0.0179). Post-hoc pairwise t-tests with false discovery rate (FDR) correction were then applied to FA and RD in WM to compare early PD, mid PD and advanced PD subjects with the HC group (Table 1), where results showed a significant difference between HC and the advanced PD group for FA in the WM (p=0.0402), and between HC and mid PD for RD in the WM (p=0.0281). 
 
@@ -125,7 +142,7 @@ Fig 5. ANOVA for NODDI, DTI, T2\*w and MTR across groups (HC, early PD, mid PD, 
 Table 1. FDR-corrected p-values following post-hoc pairwise t-tests between HC – early PD, HC – mid PD and HC – advanced PD. The significant p-values (<0.05) are shown in red with an asterisk (\*). 
 :::
 
-## 3.4 Correlation analyses with UPDRSIII scores
+## Correlation analyses with UPDRSIII scores
 
 We employed an ordinary least-squares (OLS) regression model to explore the associations between DTI, NODDI, T2\*w, and MTR metrics and UPDRSIII scores, with age included as a covariate to account for its potential confounding effects. Prior to conducting the OLS regression analysis, we assessed the potential collinearity between age and UPDRSIII scores. The Variance Inflation Factor (VIF) found was 1.1, which is well below the commonly-used threshold of 10, hence indicating minimal multicollinearity between age and UPDRSIII in our data. This suggests that age and UPDRSIII provide largely independent information, and including both in our model is unlikely to compromise its integrity. Furthermore, with a low Pearson coefficient of r=0.31, the relationship between UPDRSIII and age appears weak, suggesting that age alone is not a strong predictor of UPDRSIII in this cohort. 
 
@@ -140,7 +157,7 @@ Table 3. FDR-corrected p-values for UPDRSIII and age predictors for the OLS regr
 
 Regression plots of DTI, NODDI, MTR and T2\*w metrics with respect to age for PD subjects and HC are provided in the supplementary material, across all spinal cord subregions and spinal levels.These figures show that the progression of values with age follows a very similar trend in both HC and PD subjects across all metrics and regions. This makes it challenging to differentiate between HC and PD subjects based solely on age-related changes. However, the observed trends, such as an increase in ODI and a decrease in FA, align with findings from previous studies investigating age-related changes in these metrics in healthy individuals (@agosta_evidence_2007; @vedantam_diffusion_2014; @wang_age-related_2014). 
 
-# 4. Discussion 
+# Discussion 
 
 Based upon our ANOVA analysis, significant differences between HC and some PD groups were identified, notably between HC and the advanced PD group for FA in the WM, as well as between HC and the mid PD group in WM for RD. Our results also suggest an increase in ODI, FISO and FICVF as well as a decrease in FA with an increasing UPDRSIII score, which may be attributed to the accumulation of 𝛼-synuclein, which has been reported to cause axonal swelling (@sekigawa_role_2015), leading to greater neurite orientation dispersion and reduced diffusion anisotropy. However, since the trends observed in relation to the UPDRSIII score were not significant for any of the metrics after correcting for multiple comparisons, conclusive interpretations cannot be made based on the current study. 
 
@@ -156,7 +173,7 @@ Finally, in the current study, it was difficult to relate our findings for struc
 
 Our analysis of spinal cord cross-sectional area (CSA) aligns with the findings of @combes_spiral_2024, as we observed no structural changes due to PD. Indeed, our study revealed no significant differences in CSA between Parkinson’s disease (PD) subjects and healthy controls (HC). Additionally, no significant relationship between the UPDRSIII score and CSA was found. This absence of structural changes could explain the lack of significant correlations between PD and the examined MRI-derived metrics at the microstructural level. Furthermore, the evidence of no structural and microstructural changes within the gray matter may reinforce the findings of @landelle_altered_2023 observed through functional MRI, by suggesting that the effects of PD progression reported in their study were primarily driven by functional changes in the spinal cord rather than anatomical alterations. Nevertheless, subsequent work will be needed to confirm this. 
 
-# 5. Conclusion
+# Conclusion
 
 In summary, this work is the first to have studied DTI, NODDI, MTR and T2\*w metrics in the cervical spinal cord of a population with PD. Although some significant microstructural differences were identified between HC and PD subjects in isolated regions of the spinal cord—notably for FA and RD  in the white matter — no significant changes in microstructural metrics were found in relation to the UPDRSIII score. Our results also suggest that age may have a greater effect on DTI, NODDI, MTR and T2\*w metrics than the UPDRSIII in some regions of the cervical spinal cord. Our lack of significant findings in this current study suggest that the functional changes observed in the spinal cord of the same subjects in @landelle_altered_2023 may be more sensitive markers that correlate with disease progression as assessed by clinical measures, such as UPDRSIII, than the structural measurements. This is consistent with findings from a mixed EEG-MRI study which reported reduced functional connectivity between superior and middle frontal gyrus and paracentral lobule in PD patients relative to healthy controls during an oddball auditory task, while no structural differences were observed in the DTI metrics between the same regions (@droby_interplay_2022). 
 
@@ -185,3 +202,5 @@ Correlations of CSA with (A) the UPDRSIII score and (B) with age
 # Acknowledgements
 
 This work is supported by the TransMedTech Institute, thanks to the financial support of the Canada First Research Excellence Fund and the Fonds de recherche du Québec, the Fondation Courtois, the Natural Sciences and Engineering Research Council of Canada (NSERC), and Polytechnique Montreal. We thank the Clinical, Biospecimen, Imaging & Genetic (C-BIG) repository for help in participant recruitment and the brain imaging centre of The Neuro for help in data acquisition. We thank all participants involved in this study.
+
+# References

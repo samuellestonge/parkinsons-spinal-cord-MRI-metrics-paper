@@ -90,7 +90,7 @@ project:
     - T2*-weighted imaging
 
   github: https://github.com/neurolibre/mystical-article
-  banner: static/banner.jpg
+  banner: static/banner.png
   venue: Neurolibre #Production will override this.
   subject: Living Preprint # Production will override this.
   numbering:
