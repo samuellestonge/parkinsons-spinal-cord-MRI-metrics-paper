@@ -1,5 +1,19 @@
 format: jb-book
 root: paper.md
 chapters:
-  - file: content/figure_1.ipynb
-  - file: content/figure_2.md
+  - file: content/main_figures/figure_1.ipynb
+  - file: content/main_figures/figure_2.ipynb
+  - file: content/main_figures/figure_3.ipynb
+  - file: content/main_figures/figure_4.ipynb
+  - file: content/main_figures/figure_5.ipynb
+  - file: content/main_figures/figure2.png
+  - file: content/main_figures/figure3.png
+  - file: content/supplementary_figures/suppl_figure_1.ipynb
+  - file: content/supplementary_figures/suppl_figure_2.ipynb
+  - file: content/supplementary_figures/suppl_figure_3.ipynb
+  - file: content/templates_for_figures/figure1_template.png
+  - file: content/templates_for_figures/figure4_template.png
+  - file: content/templates_for_figures/figure5_template.png
+  - file: content/templates_for_figures/suppl_figure3_template.png
+  - file: content/templates_for_figures/suppl_figures1and2_template.png
+  
