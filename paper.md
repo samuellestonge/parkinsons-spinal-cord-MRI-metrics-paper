@@ -107,7 +107,7 @@ To explore the relationship between disease progression and microstructural chan
 :::{figure} #fig3cell
 :label: fig3
 
-Average spinal cord maps of the DTI, NODDI and MTR metrics for C2, C3, C4, and C5 spinal levels in  healthy control participants (HC), early PD, mid PD, advanced PD and all PD participants combined. 
+Average spinal cord maps of DTI, NODDI and MTR metrics for C2, C3, C4, and C5 spinal levels in  healthy control participants (HC), early PD, mid PD, advanced PD and all PD participants combined. 
 :::
 
 The average metric maps in [Fig. %sf](#fig3) revealed an increase in ODI and a decrease in FA within the white matter among PD participants compared to their healthy counterparts. Additionally, a decrease in global intensity is observed as we progress through the more caudal spinal levels, which is particularly apparent in MTR and FA maps. 
