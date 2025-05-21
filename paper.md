@@ -74,6 +74,7 @@ Participants (N=106; 65 M, 41 F) included both patients with PD (N=68; 47 M, 21 
 
 :::{figure} #fig1cell
 :label: fig1
+:width: 500px
 
 (A) Acquisition parameters for T2\*w, MTR and DWI; (B) Number of participants per category (controls, low_PD, med_PD and adv_PD) for each sequence according to their UPDRSIII score (C) Age and UPDRSIII distributions.
 :::
