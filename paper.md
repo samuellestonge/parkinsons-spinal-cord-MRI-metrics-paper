@@ -74,14 +74,12 @@ Participants (N=106; 65 M, 41 F) included both patients with PD (N=68; 47 M, 21 
 
 :::{figure} #fig1cell
 :label: fig1
-:width: 500px
 
 (A) Acquisition parameters for T2\*w, MTR and DWI; (B) Number of participants per category (controls, low_PD, med_PD and adv_PD) for each sequence according to their UPDRSIII score (C) Age and UPDRSIII distributions.
 :::
 
 :::{figure} #fig2cell
 :label: fig2
-:width: 500px
 
 Representative raw data of T2\*w, MT0/MT1, and DWI from a single subject.
 :::
@@ -108,7 +106,6 @@ Figure 3 shows the average metric maps for DTI, NODDI and MTR, obtained by regis
 
 :::{figure} #fig3cell
 :label: fig3
-:width: 500px
 
 Average spinal cord maps for DTI, NODDI and MTR metrics for C2, C3, C4, and C5 spinal levels for healthy controls (HC), low PD, med PD, adv PD and all PD participants combined.
 :::
@@ -121,7 +118,6 @@ Figure 4 presents the results of ANOVA comparing spinal cord cross-sectional are
 
 :::{figure} #fig4cell
 :label: fig4
-:width: 500px
 
 Fig 4.  ANOVA for the spinal cord cross-sectional area (CSA) for HC in comparison with PD subjects categorized by their UPDRSIII score (early PD, mid PD and advanced PD), for spinal levels C2 to C5 combined.
 :::
@@ -137,7 +133,6 @@ Figure 5 presents the results of an ANOVA comparing DTI, NODDI, MTR, and T2\*w m
 
 :::{figure} #fig5cell
 :label: fig4
-:width: 500px
 
 Fig 5. ANOVA for NODDI, DTI, T2\*w and MTR across groups (HC, early PD, mid PD, adv PD)  in (A) the white matter, (B) the gray matter and (C) the white matter to gray matter ratio, for spinal levels C2 to C5 combined. Significant group differences are indicated with a red asterisk (\*). 
 :::
@@ -188,21 +183,18 @@ Nonetheless, this exploratory study provides insights into how the cervical spin
 
 :::{figure} #suppl-fig1cell
 :label: suppl-fig1
-:width: 500px
 
 Correlations of DTI, NODDI, MTR and T2\*w with the UPDRSIII score
 :::
 
 :::{figure} #suppl-fig2cell
 :label: suppl-fig2
-:width: 500px
 
 Correlations of DTI, NODDI, MTR and T2\*w with age
 :::
 
 :::{figure} #suppl-fig3cell
 :label: suppl-fig3
-:width: 500px
 
 Correlations of CSA with (A) the UPDRSIII score and (B) with age
 :::
