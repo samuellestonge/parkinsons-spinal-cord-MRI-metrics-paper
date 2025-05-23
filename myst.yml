@@ -115,11 +115,7 @@ project:
     - content/supplementary_figures/suppl_figure_3.ipynb
 
 site:
-  template: article-theme # Or book-theme
-  # options:
-  #   favicon: static/favicon.ico # Production will override this for branding.
-  #   logo: static/logo.png # Production will override this for branding.
-  #   twitter: neurolibre
+  template: article-theme
 
 # This section is under development
 neurolibre:
