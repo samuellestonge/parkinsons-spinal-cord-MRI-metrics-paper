@@ -132,7 +132,7 @@ Table 1. P-values for UPDRSIII and Age variables for the cross-sectional area (C
 [Figure 5](#fig5) presents the results of an ANOVA comparing DTI, NODDI, MTR, and T2\*w metrics across the different groups (HC, early PD, mid PD, and advanced PD). In the white matter, our results showed a significant effect of group on FA and RD metrics, for the combined spinal levels C2 to C5 (FA : p-Group = 0.0180; RD : p-Group = 0.0179). Post-hoc pairwise t-tests with false discovery rate (FDR) correction were then applied to FA and RD in WM to compare early PD, mid PD and advanced PD subjects with the HC group (Table 2), where results showed a significant difference between HC and the advanced PD group for FA in the WM (p=0.0402), and between HC and mid PD for RD in the WM (p=0.0281). 
 
 :::{figure} #fig5cell
-:label: fig4
+:label: fig5
 
 Fig 5. ANOVA for NODDI, DTI, T2\*w and MTR across groups (HC, early PD, mid PD, adv PD)  in (A) the white matter, (B) the gray matter and (C) the white matter to gray matter ratio, for spinal levels C2 to C5 combined. Significant group differences are indicated with a red asterisk (\*). 
 :::
