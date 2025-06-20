@@ -1,3 +1,5 @@
+[![DOI](https://neurolibre.org/papers/10.55458/neurolibre.00039/status.svg)](https://doi.org/10.55458/neurolibre.00039)
+
 # Parkinson’s disease in the spinal cord: an exploratory study to establish T2*w, MTR and diffusion-weighted imaging metric values
 
 Parkinson's disease (PD) is primarily defined by brain pathology, including dopamine neuron degeneration and 𝛼-synuclein aggregation. Emerging evidence suggests that the spinal cord is also affected, with ex-vivo studies reporting abnormal 𝛼-synuclein protein aggregation within spinal cord axons of PD patients. While advanced imaging techniques such as DTI, NODDI, T2*w, and MTR have demonstrated potential for detecting PD-related changes in the brain, their application to spinal cord alterations remains unexplored.
